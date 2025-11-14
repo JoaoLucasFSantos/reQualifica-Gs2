@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  CORREÇÃO COMPLETA: Usamos classes diretas do Tailwind (bg-light-main),
+  e a lógica do Dark Mode é aplicada pelo React com o prefixo 'dark:'
+  nos componentes, eliminando o erro de módulo.
+*/
+body {
+  /* Fundo CLARO padrão */
+  @apply bg-bg-light-main text-text-dark-main; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Força a aplicação das cores escuras no body quando a classe 'dark' está ativa */
+.dark body {
+  @apply bg-bg-dark-main text-text-dark-main-light;
+}
