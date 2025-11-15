@@ -1,7 +1,7 @@
 import React from 'react';
-// Importamos os ícones (ThumbsUp foi removido, MessageSquare ainda está)
+// 1. IMPORTAÇÕES ATUALIZADAS (MessageSquare removido)
 import { 
-  X, MessageSquare, MapPin, Mail, Phone, ExternalLink, 
+  X, MapPin, Mail, Phone, ExternalLink, 
   Briefcase, GraduationCap, Code, Brain, BookOpen, Award 
 } from 'lucide-react';
 
@@ -50,15 +50,8 @@ const ProfileModal = ({ profile, onClose }) => {
     areaInteresses = [] 
   } = profile;
 
-  // Função "Enviar Mensagem" (ainda aqui nesta etapa)
-  const handleMessage = () => {
-    if (infoPessoal.email) {
-      window.location.href = `mailto:${infoPessoal.email}?subject=Contato profissional via ReQualifica sobre ${cargo}`;
-    } else {
-      alert("Este profissional não cadastrou um e-mail para contato.");
-    }
-  };
-
+  // 2. FUNÇÃO 'handleMessage' REMOVIDA
+  
   const handleContentClick = (e) => {
     e.stopPropagation();
   };
@@ -178,19 +171,10 @@ const ProfileModal = ({ profile, onClose }) => {
           </div>
         </div>
         
-        {/* Footer (Atualizado - Botão Recomendar Removido) */}
+        {/* 3. RODAPÉ ATUALIZADO (Sem botões) */}
         <footer className="p-4 bg-bg-light-main dark:bg-bg-dark-main border-t border-gray-200 dark:border-gray-700 flex-shrink-0">
           <div className="flex justify-end space-x-4">
-            
-            {/* O botão "Recomendar" foi removido daqui */}
-            
-            <button
-              onClick={handleMessage}
-              className="flex items-center space-x-2 bg-primary-red hover:bg-secondary-orange text-white font-bold py-2 px-4 rounded-lg transition duration-300"
-            >
-              <MessageSquare size={18} />
-              <span>Enviar Mensagem (Email)</span>
-            </button>
+            {/* Vazio - As ações estão no Card */}
           </div>
         </footer>
       </div>
