@@ -2,22 +2,22 @@ import React, { useState, useMemo, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import ProfileCard from '../components/ProfileCard';
 import SearchFilter from '../components/SearchFilter'; 
-import ProfileModal from '../components/ProfileModal'; // Modal de Detalhes
-import Toast from '../components/Toast'; // O NOVO componente de notificação
+import ProfileModal from '../components/ProfileModal';
 import profilesData from '../data/profilesData.json'; 
+// 1. IMPORTAMOS O NOVO COMPONENTE TOAST
+import Toast from '../components/Toast'; 
 
 const ProfilesPage = ({ goToLanding }) => {
   const [profiles] = useState(profilesData);
   const [searchText, setSearchText] = useState('');
   const [activeFilters, setActiveFilters] = useState({});
+  const [selectedProfile, setSelectedProfile] = useState(null); 
   
-  // Estados dos Modais/Pop-ups
-  const [selectedProfile, setSelectedProfile] = useState(null); // Para o Modal de Detalhes
-  const [toastMessage, setToastMessage] = useState('');     // Para a notificação push-up
+  // 2. NOVO ESTADO PARA A MENSAGEM DO TOAST
+  const [toastMessage, setToastMessage] = useState('');
 
-  // Efeito para travar o scroll
   useEffect(() => {
-    const isModalOpen = selectedProfile; // Apenas o modal grande trava o scroll
+    const isModalOpen = selectedProfile;
     document.body.style.overflow = isModalOpen ? 'hidden' : 'unset';
     return () => {
       document.body.style.overflow = 'unset';
@@ -29,8 +29,8 @@ const ProfilesPage = ({ goToLanding }) => {
     setActiveFilters(filters);
   };
 
-  // Lógica de Filtro (com verificações de segurança)
   const filteredProfiles = useMemo(() => {
+    // ... (Lógica de filtro robusta, sem alteração) ...
     let results = profiles;
     const lowerSearchText = searchText.toLowerCase();
 
@@ -42,7 +42,6 @@ const ProfilesPage = ({ goToLanding }) => {
         (profile.habilidadesTecnicas && profile.habilidadesTecnicas.some(skill => skill.toLowerCase().includes(lowerSearchText)))
       );
     }
-    
     if (activeFilters.area) {
       results = results.filter(p => p.area === activeFilters.area);
     }
@@ -52,20 +51,18 @@ const ProfilesPage = ({ goToLanding }) => {
     if (activeFilters.tecnologia) {
       results = results.filter(p => p.habilidadesTecnicas?.includes(activeFilters.tecnologia)); 
     }
-
     return results;
-
   }, [profiles, searchText, activeFilters]);
 
   return (
     <div className="min-h-screen">
       
-      {/* Notificação Push-up (Toast) */}
-      {/* Renderiza o Toast se houver uma mensagem */}
+      {/* 3. RENDERIZAÇÃO CONDICIONAL DO TOAST */}
+      {/* Se 'toastMessage' tiver texto, o Toast aparece */}
       {toastMessage && (
         <Toast 
           message={toastMessage} 
-          onClose={() => setToastMessage('')} 
+          onClose={() => setToastMessage('')} // Função para fechar o Toast
         />
       )}
       
@@ -95,7 +92,8 @@ const ProfilesPage = ({ goToLanding }) => {
                   key={profile.id} 
                   profile={profile} 
                   onCardClick={() => setSelectedProfile(profile)} 
-                  setToastMessage={setToastMessage} // Passa a função para o card
+                  // 4. PASSA A FUNÇÃO DE ATIVAR O TOAST PARA O CARD
+                  setToastMessage={setToastMessage} 
                 />
               ))
             ) : (
@@ -107,15 +105,13 @@ const ProfilesPage = ({ goToLanding }) => {
         </div>
       </main>
 
-      {/* Renderização Condicional do Modal de Detalhes */}
+      {/* Modal de Detalhes (Sem alteração) */}
       {selectedProfile && (
         <ProfileModal 
           profile={selectedProfile} 
           onClose={() => setSelectedProfile(null)} 
         />
       )}
-      
-      {/* O MessageModal foi removido daqui */}
     </div>
   );
 };

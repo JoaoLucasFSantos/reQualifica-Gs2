@@ -1,13 +1,12 @@
-// 1. IMPORTAMOS os novos ícones e o 'useState' (que já estava)
 import React, { useState } from 'react';
 import { ThumbsUp, CheckCircle, MessageSquare, Send, Check } from 'lucide-react'; 
 
-// 2. O CARD AGORA SÓ RECEBE 'onCardClick'
-const ProfileCard = ({ profile, onCardClick }) => {
+// 1. RECEBE A NOVA PROP 'setToastMessage'
+const ProfileCard = ({ profile, onCardClick, setToastMessage }) => {
   
   const { id, nome, cargo, foto, localizacao, resumo, area, habilidadesTecnicas = [] } = profile || {};
   
-  // Lógica de Recomendar (do Commit 1, sem alteração)
+  // Lógica de Recomendar (Sem alteração)
   const [isRecommended, setIsRecommended] = useState(() => {
     try {
       if (id) {
@@ -18,12 +17,12 @@ const ProfileCard = ({ profile, onCardClick }) => {
     return false; 
   });
   
-  // 3. NOVA LÓGICA DE MENSAGEM (Expansível no Card)
+  // Lógica de Mensagem (Sem alteração)
   const [isMessageOpen, setIsMessageOpen] = useState(false);
   const [message, setMessage] = useState('');
   const [isSent, setIsSent] = useState(false);
 
-  // Função Recomendar (do Commit 1, sem alteração)
+  // Função Recomendar (Sem alteração)
   const handleRecommend = (e) => {
     e.stopPropagation(); 
     const recommendations = JSON.parse(localStorage.getItem('recomendacoesReQualifica') || '[]');
@@ -38,55 +37,55 @@ const ProfileCard = ({ profile, onCardClick }) => {
     localStorage.setItem('recomendacoesReQualifica', JSON.stringify(newRecommendations));
   };
 
-  // 4. NOVA FUNÇÃO para abrir o formulário de Mensagem
+  // Função para abrir o formulário (Sem alteração)
   const handleMessageClick = (e) => {
-    e.stopPropagation(); // Impede que o clique abra o modal de detalhes
-    setIsMessageOpen(!isMessageOpen); // Alterna a visibilidade do formulário
-    setIsSent(false); // Reseta o estado de "enviado"
+    e.stopPropagation(); 
+    setIsMessageOpen(!isMessageOpen); 
+    setIsSent(false); 
   };
 
-  // 5. NOVA FUNÇÃO para "enviar" a mensagem (simulação com alert)
+  // 2. FUNÇÃO DE ENVIO ATUALIZADA
   const handleSubmitMessage = (e) => {
-    e.stopPropagation(); // Impede o modal de abrir
-    e.preventDefault(); // Impede o recarregamento da página (pois é um form)
+    e.stopPropagation(); 
+    e.preventDefault(); 
     
     if (message.trim() === '') {
-      alert('Por favor, digite uma mensagem.');
+      alert('Por favor, digite uma mensagem.'); // Mantemos o alerta de erro
       return;
     }
     
     console.log(`Mensagem para ${nome} (ID: ${id}): ${message}`);
     setIsSent(true);
 
-    // MENSAGEM PROVISÓRIA (O Toast vem no próximo commit)
-    alert(`Mensagem enviada para ${nome}!`);
+    // 3. SUBSTITUI O 'alert()' PELA CHAMADA DO TOAST
+    setToastMessage(`Mensagem enviada para ${nome}!`);
 
-    // Limpa e fecha o formulário após 1 segundo
+    // Limpa e fecha o formulário
     setTimeout(() => {
       setMessage('');
       setIsMessageOpen(false);
       setIsSent(false);
-    }, 1000); 
+    }, 2000); 
   };
 
-  // Trava de segurança
   if (!id) return null; 
 
   const displaySkills = habilidadesTecnicas.slice(0, 4);
 
   return (
+    // O div principal abre o Modal de Detalhes
     <div 
       className="bg-bg-light-card dark:bg-bg-dark-card rounded-xl shadow-lg 
                  transition-all duration-300 
                  border-t-4 border-primary-red dark:border-secondary-orange group
                  flex flex-col"
     >
-      {/* --- Seção de Informações (Clicável para abrir o Modal de Detalhes) --- */}
+      {/* --- Seção de Informações (Clicável) --- */}
       <div 
         onClick={() => onCardClick(profile)} 
         className="p-6 cursor-pointer"
       >
-        {/* ... (Conteúdo do card: foto, nome, resumo, skills, etc. - Sem alteração) ... */}
+        {/* ... (Todo o layout do card - foto, nome, resumo, skills - sem alteração) ... */}
         <div className="flex items-center space-x-4 mb-4">
           <img src={foto || 'https://via.placeholder.com/64'} alt={`Foto de ${nome}`} className="w-16 h-16 rounded-full object-cover border-2 border-secondary-orange group-hover:border-primary-red transition-colors"/>
           <div>
@@ -109,11 +108,10 @@ const ProfileCard = ({ profile, onCardClick }) => {
         </div>
       </div>
 
-      {/* --- 6. SEÇÃO DE AÇÕES E FORMULÁRIO (Atualizada) --- */}
+      {/* --- Seção de Ações e Formulário (Sem alteração) --- */}
       <div className="px-6 pb-6">
         <div className="pt-4 border-t border-gray-200 dark:border-gray-700 flex flex-col sm:flex-row justify-end items-center space-y-2 sm:space-y-0 sm:space-x-2">
           
-          {/* Botão Recomendar (do Commit 1) */}
           <button
             onClick={handleRecommend}
             title="Recomendar"
@@ -127,7 +125,6 @@ const ProfileCard = ({ profile, onCardClick }) => {
             <span>{isRecommended ? 'Recomendado' : 'Recomendar'}</span>
           </button>
 
-          {/* Botão Enviar Mensagem (Abre o formulário) */}
           <button
             onClick={handleMessageClick}
             title="Enviar Mensagem"
@@ -138,12 +135,12 @@ const ProfileCard = ({ profile, onCardClick }) => {
           </button>
         </div>
 
-        {/* 7. Formulário Colapsável (Aparece aqui dentro) */}
+        {/* Formulário Colapsável (Sem alteração) */}
         {isMessageOpen && (
           <form 
             onSubmit={handleSubmitMessage}
             className="mt-4" 
-            onClick={(e) => e.stopPropagation()} // Impede o modal de abrir
+            onClick={(e) => e.stopPropagation()} 
           >
             <textarea
               value={message}
