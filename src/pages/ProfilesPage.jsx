@@ -1,19 +1,24 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import Navbar from '../components/NavBar';
+import Navbar from '../components/Navbar';
 import ProfileCard from '../components/ProfileCard';
 import SearchFilter from '../components/SearchFilter'; 
-import ProfileModal from '../components/ProfileModal'; // Importa o Modal corrigido
+import ProfileModal from '../components/ProfileModal'; // Modal de Detalhes
+import Toast from '../components/Toast'; // O NOVO componente de notificação
 import profilesData from '../data/profilesData.json'; 
 
 const ProfilesPage = ({ goToLanding }) => {
   const [profiles] = useState(profilesData);
   const [searchText, setSearchText] = useState('');
   const [activeFilters, setActiveFilters] = useState({});
-  const [selectedProfile, setSelectedProfile] = useState(null); 
+  
+  // Estados dos Modais/Pop-ups
+  const [selectedProfile, setSelectedProfile] = useState(null); // Para o Modal de Detalhes
+  const [toastMessage, setToastMessage] = useState('');     // Para a notificação push-up
 
+  // Efeito para travar o scroll
   useEffect(() => {
-    // Trava o scroll da página principal quando o modal está aberto
-    document.body.style.overflow = selectedProfile ? 'hidden' : 'unset';
+    const isModalOpen = selectedProfile; // Apenas o modal grande trava o scroll
+    document.body.style.overflow = isModalOpen ? 'hidden' : 'unset';
     return () => {
       document.body.style.overflow = 'unset';
     };
@@ -24,32 +29,27 @@ const ProfilesPage = ({ goToLanding }) => {
     setActiveFilters(filters);
   };
 
-  // Lógica de Filtro (Agora com verificações de segurança)
+  // Lógica de Filtro (com verificações de segurança)
   const filteredProfiles = useMemo(() => {
     let results = profiles;
     const lowerSearchText = searchText.toLowerCase();
 
     if (searchText) {
       results = results.filter(profile =>
-        // Verifica se cada campo existe antes de chamar o .toLowerCase()
         (profile.nome && profile.nome.toLowerCase().includes(lowerSearchText)) ||
         (profile.cargo && profile.cargo.toLowerCase().includes(lowerSearchText)) ||
         (profile.resumo && profile.resumo.toLowerCase().includes(lowerSearchText)) ||
-        // Verifica o array de habilidades
         (profile.habilidadesTecnicas && profile.habilidadesTecnicas.some(skill => skill.toLowerCase().includes(lowerSearchText)))
       );
     }
     
-    // Filtros de Dropdown (com segurança)
     if (activeFilters.area) {
       results = results.filter(p => p.area === activeFilters.area);
     }
     if (activeFilters.localizacao) {
-      // Usamos '?' (optional chaining) por segurança
       results = results.filter(p => p.localizacao?.includes(activeFilters.localizacao)); 
     }
     if (activeFilters.tecnologia) {
-      // Usamos '?' (optional chaining) por segurança
       results = results.filter(p => p.habilidadesTecnicas?.includes(activeFilters.tecnologia)); 
     }
 
@@ -59,6 +59,15 @@ const ProfilesPage = ({ goToLanding }) => {
 
   return (
     <div className="min-h-screen">
+      
+      {/* Notificação Push-up (Toast) */}
+      {/* Renderiza o Toast se houver uma mensagem */}
+      {toastMessage && (
+        <Toast 
+          message={toastMessage} 
+          onClose={() => setToastMessage('')} 
+        />
+      )}
       
       <Navbar goToLanding={goToLanding} /> 
       
@@ -85,7 +94,8 @@ const ProfilesPage = ({ goToLanding }) => {
                 <ProfileCard 
                   key={profile.id} 
                   profile={profile} 
-                  onClick={() => setSelectedProfile(profile)} // Define o perfil para abrir o modal
+                  onCardClick={() => setSelectedProfile(profile)} 
+                  setToastMessage={setToastMessage} // Passa a função para o card
                 />
               ))
             ) : (
@@ -97,13 +107,15 @@ const ProfilesPage = ({ goToLanding }) => {
         </div>
       </main>
 
-      {/* Renderiza o Modal se 'selectedProfile' não for nulo */}
+      {/* Renderização Condicional do Modal de Detalhes */}
       {selectedProfile && (
         <ProfileModal 
           profile={selectedProfile} 
-          onClose={() => setSelectedProfile(null)} // Define como nulo para fechar
+          onClose={() => setSelectedProfile(null)} 
         />
       )}
+      
+      {/* O MessageModal foi removido daqui */}
     </div>
   );
 };
