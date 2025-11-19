@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
-// 1. CORREÇÃO: Importando de './pages/'
+// Importações das Páginas
 import LandingPage from './pages/LandingPage'; 
 import ProfilesPage from './pages/ProfilesPage';
 import MyProfilePage from './pages/MyProfilePage';
+import CoursesPage from './pages/CoursesPage'; // Importa a nova página
 
 function App() {
   const [theme, setTheme] = useState(
     localStorage.getItem('theme') || 'light'
   );
 
+  // Começa na landing page
   const [currentPage, setCurrentPage] = useState('landing'); 
 
   useEffect(() => {
@@ -23,11 +25,13 @@ function App() {
     setTheme(currentTheme => (currentTheme === 'light' ? 'dark' : 'light'));
   };
 
+  // Função de Navegação
   const handleNavigate = (page) => {
     setCurrentPage(page);
     window.scrollTo(0, 0);
   };
 
+  // Renderização Condicional das Páginas
   if (currentPage === 'landing') {
     return (
       <LandingPage 
@@ -42,7 +46,14 @@ function App() {
         onNavigate={handleNavigate} 
       />
     );
+  } else if (currentPage === 'courses') {
+    return (
+      <CoursesPage 
+        onNavigate={handleNavigate} 
+      />
+    );
   } else {
+    // Default: 'profiles'
     return (
       <ProfilesPage 
         onNavigate={handleNavigate} 
