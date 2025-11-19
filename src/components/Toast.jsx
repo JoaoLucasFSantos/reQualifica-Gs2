@@ -6,14 +6,12 @@ const Toast = ({ message, onClose }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       onClose();
-    }, 3000); // 3000ms = 3 segundos
+    }, 3000);
 
-    // Limpa o timer se o componente for desmontado (para evitar erros)
     return () => clearTimeout(timer);
   }, [onClose]);
 
   return (
-    // Posição fixa no canto superior direito, acima de tudo (z-50)
     <div className="fixed top-6 right-6 z-50 max-w-sm w-full">
       {/* Container da notificação com estilo de sucesso (verde) */}
       <div className="bg-green-600 text-white p-4 rounded-lg shadow-lg flex items-center space-x-3 

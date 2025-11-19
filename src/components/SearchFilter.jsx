@@ -4,10 +4,10 @@ import { Search, MapPin, Layers, Briefcase } from 'lucide-react';
 const SearchFilter = ({ onSearch, filters, setFilters }) => {
   const [searchText, setSearchText] = useState('');
 
-  // Opções simuladas (ajuste conforme seu JSON final, se necessário)
+  // Opções simuladas
   const areas = ['Desenvolvimento', 'Data Science', 'Design e Experiência do Usuário', 'Marketing', 'Cibersegurança', 'Gestão de Projetos', 'Infraestrutura e Cloud', 'Qualidade de Software', 'Recursos Humanos'];
   const cidades = ['São Paulo/SP', 'Rio de Janeiro/RJ', 'Curitiba/PR', 'Belo Horizonte/MG', 'Porto Alegre/RS', 'Campinas/SP', 'Recife/PE', 'Salvador/BA', 'Florianópolis/SC'];
-  // Tecnologias mais comuns
+
   const tecnologias = ['React', 'Python', 'AWS', 'Figma', 'SEO', 'SQL', 'Node.js', 'Angular', 'Java', 'C#', 'Flutter'];
 
   const handleSearch = () => {
@@ -15,7 +15,6 @@ const SearchFilter = ({ onSearch, filters, setFilters }) => {
   };
 
   const handleFilterChange = (name, value) => {
-    // Atualiza os filtros no componente pai (ProfilesPage.jsx)
     setFilters(prev => ({
       ...prev,
       [name]: value === "" ? null : value 

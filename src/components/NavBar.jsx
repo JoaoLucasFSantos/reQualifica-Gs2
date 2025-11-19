@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, User, Users, BookOpen } from 'lucide-react'; 
 
-// Recebe 'onNavigate' e 'activePage' para destacar o link correto
 const Navbar = ({ onNavigate, activePage }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,7 +20,7 @@ const Navbar = ({ onNavigate, activePage }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           
-          {/* Logo -> Vai para Landing */}
+          {}
           <button 
             onClick={() => handleNavClick('landing')} 
             className="text-2xl font-bold text-primary-red transition-colors cursor-pointer hover:opacity-80"

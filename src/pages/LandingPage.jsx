@@ -21,7 +21,7 @@ const DarkModeToggle = ({ theme, toggleTheme }) => {
   );
 };
 
-// Componente Card (Mantido)
+// Componente Card
 const Card = ({ title, description }) => {
   return (
     <div className="p-6 rounded-xl shadow-xl 

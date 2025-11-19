@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { ThumbsUp, CheckCircle, MessageSquare, Send, Check } from 'lucide-react'; 
 
-// 1. RECEBE A NOVA PROP 'setToastMessage'
+// 1. RECEBE A NOVA PROP
 const ProfileCard = ({ profile, onCardClick, setToastMessage }) => {
   
   const { id, nome, cargo, foto, localizacao, resumo, area, habilidadesTecnicas = [] } = profile || {};
   
-  // Lógica de Recomendar (Sem alteração)
+  // Lógica de Recomendar
   const [isRecommended, setIsRecommended] = useState(() => {
     try {
       if (id) {
@@ -17,12 +17,12 @@ const ProfileCard = ({ profile, onCardClick, setToastMessage }) => {
     return false; 
   });
   
-  // Lógica de Mensagem (Sem alteração)
+  // Lógica de Mensagem
   const [isMessageOpen, setIsMessageOpen] = useState(false);
   const [message, setMessage] = useState('');
   const [isSent, setIsSent] = useState(false);
 
-  // Função Recomendar (Sem alteração)
+  // Função Recomendar
   const handleRecommend = (e) => {
     e.stopPropagation(); 
     const recommendations = JSON.parse(localStorage.getItem('recomendacoesReQualifica') || '[]');
@@ -44,7 +44,7 @@ const ProfileCard = ({ profile, onCardClick, setToastMessage }) => {
     setIsSent(false); 
   };
 
-  // 2. FUNÇÃO DE ENVIO ATUALIZADA
+  // 2. FUNÇÃO DE ENVIO
   const handleSubmitMessage = (e) => {
     e.stopPropagation(); 
     e.preventDefault(); 
@@ -57,7 +57,7 @@ const ProfileCard = ({ profile, onCardClick, setToastMessage }) => {
     console.log(`Mensagem para ${nome} (ID: ${id}): ${message}`);
     setIsSent(true);
 
-    // 3. SUBSTITUI O 'alert()' PELA CHAMADA DO TOAST
+    // 3. SUBSTITUI O 'alert()'
     setToastMessage(`Mensagem enviada para ${nome}!`);
 
     // Limpa e fecha o formulário

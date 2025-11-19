@@ -35,7 +35,7 @@ const MyProfilePage = ({ onNavigate }) => {
     localStorage.setItem('myProfileData', JSON.stringify(profileData));
   }, [profileData]);
 
-  // --- FUNÇÃO DE VALIDAÇÃO E SALVAMENTO (A NOVA LÓGICA) ---
+  // --- FUNÇÃO DE VALIDAÇÃO E SALVAMENTO
   const handleSave = () => {
     // 1. Valida Campos Principais
     if (!profileData.nome.trim() || !profileData.cargo.trim() || !profileData.resumo.trim()) {
@@ -66,7 +66,6 @@ const MyProfilePage = ({ onNavigate }) => {
     alert("Perfil atualizado com sucesso!");
   };
 
-  // --- MANIPULAÇÃO DE DADOS ---
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -92,7 +91,7 @@ const MyProfilePage = ({ onNavigate }) => {
     newExp[index][field] = value;
     setProfileData(prev => ({ ...prev, experiencia: newExp }));
   };
-  // Agora adiciona campos vazios para forçar digitação
+  // adiciona campos vazios para forçar digitação
   const addExperience = () => {
     setProfileData(prev => ({
       ...prev,
@@ -121,10 +120,8 @@ const MyProfilePage = ({ onNavigate }) => {
     setProfileData(prev => ({ ...prev, educacao: newEdu }));
   };
 
-  // Helper para estilo de input inválido
   const getInputClass = (value) => {
     const base = "w-full p-1 rounded bg-white dark:bg-[#2d2d2d] text-text-dark-main dark:text-white border ";
-    // Se estiver vazio e editando, borda vermelha. Senão, borda padrão.
     return base + (value.trim() === "" ? "border-red-500 ring-1 ring-red-500" : "border-gray-300 dark:border-gray-600");
   };
 

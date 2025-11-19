@@ -1,12 +1,11 @@
 import React from 'react';
-// 1. IMPORTAÇÕES ATUALIZADAS (MessageSquare removido)
+// 1. IMPORTAÇÕES ATUALIZADAS
 import { 
   X, MapPin, Mail, Phone, ExternalLink, 
   Briefcase, GraduationCap, Code, Brain, BookOpen, Award 
 } from 'lucide-react';
 
-// --- Componentes Auxiliares (InfoItem, DetailBlock) ---
-// (Estes são os componentes robustos que não quebram)
+// --- Componentes Auxiliares
 const InfoItem = ({ icon: Icon, text }) => {
   if (!text) return null; 
   return (
@@ -31,12 +30,11 @@ const DetailBlock = ({ title, icon: Icon, children, items }) => {
   );
 };
 
-// --- Componente Principal (Atualizado) ---
+// --- Componente Principal
 const ProfileModal = ({ profile, onClose }) => {
 
   if (!profile) return null;
 
-  // Desestruturação com valores padrão para segurança
   const {
     nome, cargo, foto, resumo, localizacao, area,
     infoPessoal = {}, 
@@ -50,14 +48,12 @@ const ProfileModal = ({ profile, onClose }) => {
     areaInteresses = [] 
   } = profile;
 
-  // 2. FUNÇÃO 'handleMessage' REMOVIDA
   
   const handleContentClick = (e) => {
     e.stopPropagation();
   };
 
   return (
-    // Overlay
     <div 
       className="fixed inset-0 z-50 bg-black bg-opacity-75 flex items-center justify-center p-4"
       onClick={onClose} 
@@ -76,7 +72,7 @@ const ProfileModal = ({ profile, onClose }) => {
           </button>
         </header>
 
-        {/* Conteúdo Scrollável (Idêntico, sem alterações) */}
+        {/* Conteúdo Scrollável */}
         <div className="p-6 md:p-8 overflow-y-auto flex-1">
           {/* Seção Principal */}
           <div className="flex flex-col md:flex-row items-start md:space-x-6 mb-8 pb-6 border-b border-dashed border-gray-300 dark:border-gray-700">
@@ -171,10 +167,10 @@ const ProfileModal = ({ profile, onClose }) => {
           </div>
         </div>
         
-        {/* 3. RODAPÉ ATUALIZADO (Sem botões) */}
+        {/* 3. RODAPÉ ATUALIZADO */}
         <footer className="p-4 bg-bg-light-main dark:bg-bg-dark-main border-t border-gray-200 dark:border-gray-700 flex-shrink-0">
           <div className="flex justify-end space-x-4">
-            {/* Vazio - As ações estão no Card */}
+            {}
           </div>
         </footer>
       </div>
