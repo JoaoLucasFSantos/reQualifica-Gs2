@@ -1,0 +1,1838 @@
+[
+  {
+    "id": "mod-1",
+    "titulo": "Módulo 1: Aulas 1 a 15",
+    "aulas": [
+      {
+        "id": "vid-0",
+        "titulo": "00 - Maratona Java Virado No Jiraya - Bem-vindo",
+        "videoId": "VKjFuX91G5Q",
+        "duracao": "6:11"
+      },
+      {
+        "id": "vid-1",
+        "titulo": "01 - O que esperar do curso",
+        "videoId": "ooCqalwSpuE",
+        "duracao": "7:10"
+      },
+      {
+        "id": "vid-2",
+        "titulo": "02 - Como Java Funciona",
+        "videoId": "JasmdiTyduI",
+        "duracao": "10:28"
+      },
+      {
+        "id": "vid-3",
+        "titulo": "03 - Fazendo o download da JDK 15",
+        "videoId": "Tsyeybeh968",
+        "duracao": "9:45"
+      },
+      {
+        "id": "vid-4",
+        "titulo": "04 - Configurando variaveis de ambiente",
+        "videoId": "xzAESAp_soQ",
+        "duracao": "8:08"
+      },
+      {
+        "id": "vid-5",
+        "titulo": "05 - Executando compilação manualmente",
+        "videoId": "E64JTsEyXCM",
+        "duracao": "11:21"
+      },
+      {
+        "id": "vid-6",
+        "titulo": "06 - Download da IDE IntelliJ Community",
+        "videoId": "uB5Qbm-RMyU",
+        "duracao": "6:10"
+      },
+      {
+        "id": "vid-7",
+        "titulo": "07 - Conhecendo a IDE IntelliJ Community",
+        "videoId": "ds3t9C2A50U",
+        "duracao": "11:00"
+      },
+      {
+        "id": "vid-8",
+        "titulo": "08 - Organizando o código em pacotes",
+        "videoId": "TnnS-R--WKc",
+        "duracao": "8:06"
+      },
+      {
+        "id": "vid-9",
+        "titulo": "09 - Comentários",
+        "videoId": "2rMT0qRyiYs",
+        "duracao": "7:56"
+      },
+      {
+        "id": "vid-10",
+        "titulo": "10 - Tipos primitivos pt 01 - convenções de variáveis",
+        "videoId": "RRHGYyJTTpQ",
+        "duracao": "11:39"
+      },
+      {
+        "id": "vid-11",
+        "titulo": "11 - Tipos primitivos pt 02 - declaração e tamanho em memória",
+        "videoId": "veDgI_zZ7uk",
+        "duracao": "12:48"
+      },
+      {
+        "id": "vid-12",
+        "titulo": "12 - Tipos primitivos pt 03 - casting",
+        "videoId": "74hd4o7V328",
+        "duracao": "7:42"
+      },
+      {
+        "id": "vid-13",
+        "titulo": "13 - Tipos primitivos pt 04 - Strings",
+        "videoId": "13VfcFXwsjw",
+        "duracao": "6:10"
+      },
+      {
+        "id": "vid-14",
+        "titulo": "14 - Tipos primitivos pt 05 - Exercício",
+        "videoId": "Q0REhCVBvAg",
+        "duracao": "10:21"
+      }
+    ]
+  },
+  {
+    "id": "mod-2",
+    "titulo": "Módulo 2: Aulas 16 a 30",
+    "aulas": [
+      {
+        "id": "vid-15",
+        "titulo": "15 - Operadores pt 01 - Aritiméticos",
+        "videoId": "1Fsvlted69g",
+        "duracao": "7:41"
+      },
+      {
+        "id": "vid-16",
+        "titulo": "16 - Operadores pt 02 - Relacionais",
+        "videoId": "U390IaCtOUk",
+        "duracao": "8:49"
+      },
+      {
+        "id": "vid-17",
+        "titulo": "17 - Operadores pt 03 - Lógicos AND",
+        "videoId": "cT6sw-Pw4l0",
+        "duracao": "8:58"
+      },
+      {
+        "id": "vid-18",
+        "titulo": "18 - Operadores pt 04 - Lógicos OR",
+        "videoId": "ELcO4DN7lxw",
+        "duracao": "7:13"
+      },
+      {
+        "id": "vid-19",
+        "titulo": "19 - Operadores pt 05 - Atribuição",
+        "videoId": "EFrq1WxsL1k",
+        "duracao": "10:31"
+      },
+      {
+        "id": "vid-20",
+        "titulo": "20 - Estruturas Condicionais pt 01 - IF",
+        "videoId": "gk1_Pn8GZA4",
+        "duracao": "12:01"
+      },
+      {
+        "id": "vid-21",
+        "titulo": "21 - Estruturas Condicionais pt 02 - ELSE IF",
+        "videoId": "exxeNsgcg3c",
+        "duracao": "14:11"
+      },
+      {
+        "id": "vid-22",
+        "titulo": "22 - Estruturas Condicionais pt 03 - Operador ternário",
+        "videoId": "gU-qCpBC5jk",
+        "duracao": "10:42"
+      },
+      {
+        "id": "vid-23",
+        "titulo": "23 - Estruturas Condicionais pt 04 - Tabela Verdade e exercício",
+        "videoId": "Y3ODYE3npgo",
+        "duracao": "5:29"
+      },
+      {
+        "id": "vid-24",
+        "titulo": "24 - Estruturas Condicionais pt 05 - Resolução do exercícios",
+        "videoId": "W-ng6Dqa-E4",
+        "duracao": "10:38"
+      },
+      {
+        "id": "vid-25",
+        "titulo": "25 - Estruturas Condicionais pt 06 - Switch",
+        "videoId": "AYMtqJSrQTU",
+        "duracao": "11:09"
+      },
+      {
+        "id": "vid-26",
+        "titulo": "26 - Estruturas Condicionais pt 07 - Switch exercício",
+        "videoId": "GDAgMb9amow",
+        "duracao": "5:10"
+      },
+      {
+        "id": "vid-27",
+        "titulo": "27 - Estruturas de Repetição pt 01 - Laços de repetição while, do while, for",
+        "videoId": "hEl67ZAU_Hg",
+        "duracao": "12:59"
+      },
+      {
+        "id": "vid-28",
+        "titulo": "28 - Estruturas de Repetição pt 02 - Exercício for",
+        "videoId": "nvFAe05Ok3g",
+        "duracao": "4:42"
+      },
+      {
+        "id": "vid-29",
+        "titulo": "29 - Estruturas de Repetição pt 03 - Break",
+        "videoId": "bcv-cgpw7Ak",
+        "duracao": "6:04"
+      }
+    ]
+  },
+  {
+    "id": "mod-3",
+    "titulo": "Módulo 3: Aulas 31 a 45",
+    "aulas": [
+      {
+        "id": "vid-30",
+        "titulo": "30 - Estruturas de Repetição pt 04 - Exercício Break",
+        "videoId": "RaEO2YsqFII",
+        "duracao": "7:09"
+      },
+      {
+        "id": "vid-31",
+        "titulo": "31 - Estruturas de Repetição pt 05 - Continue",
+        "videoId": "f65R-lQ4NpY",
+        "duracao": "6:16"
+      },
+      {
+        "id": "vid-32",
+        "titulo": "32 - Arrays pt 01",
+        "videoId": "fvw4bmihZHA",
+        "duracao": "11:13"
+      },
+      {
+        "id": "vid-33",
+        "titulo": "33 - Arrays pt 02",
+        "videoId": "S8Eaq6uxnd8",
+        "duracao": "4:37"
+      },
+      {
+        "id": "vid-34",
+        "titulo": "34 - Arrays pt 03",
+        "videoId": "Vsn-CXzzpUc",
+        "duracao": "8:27"
+      },
+      {
+        "id": "vid-35",
+        "titulo": "35  - Arrays pt 04 - Foreach",
+        "videoId": "cl47iLWalUw",
+        "duracao": "9:19"
+      },
+      {
+        "id": "vid-36",
+        "titulo": "36 - Arrays Multidimensionais pt 01",
+        "videoId": "EalQ6X_RtJk",
+        "duracao": "13:31"
+      },
+      {
+        "id": "vid-37",
+        "titulo": "37 - Arrays Multidimensionais pt 02 - Foreach",
+        "videoId": "TGq3754CsN4",
+        "duracao": "5:33"
+      },
+      {
+        "id": "vid-38",
+        "titulo": "38 - Arrays Multidimensionais pt 03 - Inicialização",
+        "videoId": "vp8bQZomKLo",
+        "duracao": "10:43"
+      },
+      {
+        "id": "vid-39",
+        "titulo": "39 - Orientação Objetos pt 01 - Introdução classes pt 01",
+        "videoId": "EyuPFLuvD7Q",
+        "duracao": "19:14"
+      },
+      {
+        "id": "vid-40",
+        "titulo": "40 - Orientação Objetos - Introdução classes pt 02",
+        "videoId": "uB7KvSz6WiA",
+        "duracao": "8:50"
+      },
+      {
+        "id": "vid-41",
+        "titulo": "41 - Orientação Objetos - Coesão",
+        "videoId": "dJLYPP1ExYY",
+        "duracao": "8:51"
+      },
+      {
+        "id": "vid-42",
+        "titulo": "42 - Orientação Objetos - Exercício Classes",
+        "videoId": "JbL4SAFORco",
+        "duracao": "8:16"
+      },
+      {
+        "id": "vid-43",
+        "titulo": "43 - Orientação Objetos - Referência de objetos",
+        "videoId": "g_SGuMYHgI0",
+        "duracao": "5:06"
+      },
+      {
+        "id": "vid-44",
+        "titulo": "44 - Orientação Objetos - Métodos pt 01",
+        "videoId": "ZM0AJhKjLYc",
+        "duracao": "9:05"
+      }
+    ]
+  },
+  {
+    "id": "mod-4",
+    "titulo": "Módulo 4: Aulas 46 a 60",
+    "aulas": [
+      {
+        "id": "vid-45",
+        "titulo": "45 - Orientação Objetos - Métodos pt 02 - Parâmetros",
+        "videoId": "op6inGTMBiw",
+        "duracao": "8:51"
+      },
+      {
+        "id": "vid-46",
+        "titulo": "46 - Orientação Objetos - Métodos pt 03 - Retorno pt 01",
+        "videoId": "FCnTsy2EzSw",
+        "duracao": "8:58"
+      },
+      {
+        "id": "vid-47",
+        "titulo": "47 - Orientação Objetos - Métodos pt 04 - Retorno pt 02",
+        "videoId": "d0BO5mBBFK8",
+        "duracao": "8:30"
+      },
+      {
+        "id": "vid-48",
+        "titulo": "48 - Orientação Objetos - Métodos pt 05 - Parâmetros tipo primitivo",
+        "videoId": "-izqpkaXKx0",
+        "duracao": "10:39"
+      },
+      {
+        "id": "vid-49",
+        "titulo": "49 - Orientação Objetos - Métodos pt 06 - Parâmetros tipo referência",
+        "videoId": "C-tmxo4FcKs",
+        "duracao": "14:34"
+      },
+      {
+        "id": "vid-50",
+        "titulo": "50 - Orientação Objetos - Métodos pt 07 - Parâmetros tipo referência pt 02",
+        "videoId": "OMuzOoHAEpg",
+        "duracao": "7:12"
+      },
+      {
+        "id": "vid-51",
+        "titulo": "51 - Orientação Objetos - Métodos pt 08 - Referência this",
+        "videoId": "0fVZlarZ-Lg",
+        "duracao": "8:21"
+      },
+      {
+        "id": "vid-52",
+        "titulo": "52 - Orientação Objetos - Métodos pt 09 - Varargs",
+        "videoId": "T0E4Ewwz1IY",
+        "duracao": "8:49"
+      },
+      {
+        "id": "vid-53",
+        "titulo": "53 - Orientação Objetos - Métodos pt 10 - Exercise",
+        "videoId": "F2Y867f1J8U",
+        "duracao": "17:37"
+      },
+      {
+        "id": "vid-54",
+        "titulo": "54 - Orientação Objetos - Modificador de acesso private, get e set pt 01",
+        "videoId": "QDzjgS0r39c",
+        "duracao": "17:01"
+      },
+      {
+        "id": "vid-55",
+        "titulo": "55 - Orientação Objetos - Modificador de acesso private, get e set pt 02",
+        "videoId": "hJNlMh9ktQ4",
+        "duracao": "5:49"
+      },
+      {
+        "id": "vid-56",
+        "titulo": "56 - Orientação Objetos - Modificador de acesso private, get e set pt 03",
+        "videoId": "kuvg8JixRp4",
+        "duracao": "6:58"
+      },
+      {
+        "id": "vid-57",
+        "titulo": "57 - Orientação Objetos - Sobrecarga de métodos",
+        "videoId": "UNPh61FYFrA",
+        "duracao": "16:36"
+      },
+      {
+        "id": "vid-58",
+        "titulo": "58 - Orientação Objetos - Construtores pt 01",
+        "videoId": "zErSZzgYY_g",
+        "duracao": "10:58"
+      },
+      {
+        "id": "vid-59",
+        "titulo": "59 - Orientação Objetos - Construtores pt 02 - Sobrecarga",
+        "videoId": "rW11EAkxFnc",
+        "duracao": "8:35"
+      }
+    ]
+  },
+  {
+    "id": "mod-5",
+    "titulo": "Módulo 5: Aulas 61 a 75",
+    "aulas": [
+      {
+        "id": "vid-60",
+        "titulo": "60 - Orientação Objetos - Blocos de inicialização",
+        "videoId": "HGB02nLvgKU",
+        "duracao": "11:32"
+      },
+      {
+        "id": "vid-61",
+        "titulo": "61 - Orientação Objetos - Modificador static",
+        "videoId": "WBBbsEdzzmA",
+        "duracao": "14:55"
+      },
+      {
+        "id": "vid-62",
+        "titulo": "62 - Orientação Objetos - Métodos estáticos",
+        "videoId": "jowlUssbJmk",
+        "duracao": "9:16"
+      },
+      {
+        "id": "vid-63",
+        "titulo": "63 - Orientação Objetos - Bloco de inicialização estático",
+        "videoId": "4YE1ewRK-rk",
+        "duracao": "8:39"
+      },
+      {
+        "id": "vid-64",
+        "titulo": "64 - Orientação Objetos - Associação pt 01 - Arrays com Objetos",
+        "videoId": "HOjV9M6pRQQ",
+        "duracao": "7:53"
+      },
+      {
+        "id": "vid-65",
+        "titulo": "65 - Orientação Objetos - Associação pt 02 - Associação unidirecional um para muitos",
+        "videoId": "LFlZcO9qAh8",
+        "duracao": "7:51"
+      },
+      {
+        "id": "vid-66",
+        "titulo": "66 - Orientação Objetos - Associação pt 03 - Associação unidirecional muitos para um",
+        "videoId": "idIGsMoxfO0",
+        "duracao": "7:25"
+      },
+      {
+        "id": "vid-67",
+        "titulo": "67 - Orientação Objetos - Associação pt 04 - Associação bidirecional",
+        "videoId": "-RtaqvKlH7w",
+        "duracao": "10:46"
+      },
+      {
+        "id": "vid-68",
+        "titulo": "68 - Orientação Objetos - Leitura de dados pelo console",
+        "videoId": "9IX94bsa3io",
+        "duracao": "8:26"
+      },
+      {
+        "id": "vid-69",
+        "titulo": "69 - Orientação Objetos - Exercício leitura de dados do teclado",
+        "videoId": "pO1rQgpJlkg",
+        "duracao": "4:26"
+      },
+      {
+        "id": "vid-70",
+        "titulo": "70 - Orientação Objetos - Associação pt 05 - Exercício Associação",
+        "videoId": "FYANhUfWTyI",
+        "duracao": "19:14"
+      },
+      {
+        "id": "vid-71",
+        "titulo": "71 - Orientação Objetos - Herança pt 01",
+        "videoId": "fOlsHNo1b0k",
+        "duracao": "14:47"
+      },
+      {
+        "id": "vid-72",
+        "titulo": "72 - Orientação Objetos - Herança pt 02 - Super",
+        "videoId": "mgSz5XSH4dM",
+        "duracao": "8:02"
+      },
+      {
+        "id": "vid-73",
+        "titulo": "73 - Orientação Objetos - Herança pt 03 - protected",
+        "videoId": "xoErKNbeG0w",
+        "duracao": "6:12"
+      },
+      {
+        "id": "vid-74",
+        "titulo": "74 - Orientação Objetos - Herança pt 04 - Construtores",
+        "videoId": "64GcJDKN4mI",
+        "duracao": "11:57"
+      }
+    ]
+  },
+  {
+    "id": "mod-6",
+    "titulo": "Módulo 6: Aulas 76 a 90",
+    "aulas": [
+      {
+        "id": "vid-75",
+        "titulo": "75 - Orientação Objetos - Herança pt 05 - Sequência de inicialização",
+        "videoId": "raAHfRdld0Y",
+        "duracao": "9:33"
+      },
+      {
+        "id": "vid-76",
+        "titulo": "76 - Orientação Objetos - Sobrescrita do método toString",
+        "videoId": "62qcGF6IVfc",
+        "duracao": "7:52"
+      },
+      {
+        "id": "vid-77",
+        "titulo": "77 - Orientação Objetos - Modificador final pt 01 - Tipo primitivo",
+        "videoId": "EQhYKOBCozE",
+        "duracao": "8:57"
+      },
+      {
+        "id": "vid-78",
+        "titulo": "78 - Orientação Objetos - Modificador final pt 02 - Tipo referência",
+        "videoId": "PqAZFtNsgn4",
+        "duracao": "6:37"
+      },
+      {
+        "id": "vid-79",
+        "titulo": "79 - Orientação Objetos - Modificador final pt 03 - Classes e métodos",
+        "videoId": "KWcqFc3X5Is",
+        "duracao": "5:50"
+      },
+      {
+        "id": "vid-80",
+        "titulo": "80 - Orientação Objetos - Enumeração pt 01 - Introdução",
+        "videoId": "3xzrprPwS2Q",
+        "duracao": "13:29"
+      },
+      {
+        "id": "vid-81",
+        "titulo": "81 - Orientação Objetos - Enumeração pt 02 - Construtores e atributos",
+        "videoId": "gsQ1gZYh5Wo",
+        "duracao": "11:58"
+      },
+      {
+        "id": "vid-82",
+        "titulo": "82 - Orientação Objetos - Enumeração pt 03 - Sobrescrita de métodos",
+        "videoId": "8Vwf5vgMoDY",
+        "duracao": "7:53"
+      },
+      {
+        "id": "vid-83",
+        "titulo": "83 - Orientação Objetos - Enumeração pt 04 - Busca por atributos",
+        "videoId": "rbqIXJwy6-M",
+        "duracao": "5:43"
+      },
+      {
+        "id": "vid-84",
+        "titulo": "84 - Orientação Objetos - Classes abstratas pt 01",
+        "videoId": "ws1NVBGeegs",
+        "duracao": "9:00"
+      },
+      {
+        "id": "vid-85",
+        "titulo": "85 - Orientação Objetos - Classes abstratas pt 02 - Métodos abstratos",
+        "videoId": "j97OEyzBcKI",
+        "duracao": "8:15"
+      },
+      {
+        "id": "vid-86",
+        "titulo": "86 - Orientação Objetos - Classes abstratas pt 03 - Métodos abstratos regras",
+        "videoId": "xI0xspht6mA",
+        "duracao": "5:18"
+      },
+      {
+        "id": "vid-87",
+        "titulo": "87 - Orientação Objetos - Interfaces pt 01 - Introdução",
+        "videoId": "AhVd_DzV3DU",
+        "duracao": "7:29"
+      },
+      {
+        "id": "vid-88",
+        "titulo": "88 - Orientação Objetos - Interfaces pt 02 - Implementando múltiplas interfaces",
+        "videoId": "QKjFkaagGdk",
+        "duracao": "8:31"
+      },
+      {
+        "id": "vid-89",
+        "titulo": "89 - Orientação Objetos - Interfaces pt 03 - Atributos e métodos estáticos",
+        "videoId": "SYyEyR78dSQ",
+        "duracao": "6:22"
+      }
+    ]
+  },
+  {
+    "id": "mod-7",
+    "titulo": "Módulo 7: Aulas 91 a 105",
+    "aulas": [
+      {
+        "id": "vid-90",
+        "titulo": "90 - Orientação Objetos - Polimorfismo pt 01 - Introdução",
+        "videoId": "UmReA29kOVw",
+        "duracao": "15:35"
+      },
+      {
+        "id": "vid-91",
+        "titulo": "91 - Orientação Objetos - Polimorfismo pt 02 - Funcionamento",
+        "videoId": "TZt_LYjKLiQ",
+        "duracao": "11:34"
+      },
+      {
+        "id": "vid-92",
+        "titulo": "92 - Orientação Objetos - Polimorfismo pt 03 - Parâmetros polimórficos",
+        "videoId": "1kKS1XV8saE",
+        "duracao": "7:57"
+      },
+      {
+        "id": "vid-93",
+        "titulo": "93 - Orientação Objetos - Polimorfismo pt 04 - Cast e instanceof",
+        "videoId": "qpefWJeupV0",
+        "duracao": "9:25"
+      },
+      {
+        "id": "vid-94",
+        "titulo": "94 - Orientação Objetos - Polimorfismo pt 05 - Programação orientada a interface",
+        "videoId": "lDsO78xFp9Y",
+        "duracao": "8:24"
+      },
+      {
+        "id": "vid-95",
+        "titulo": "95 - Exceções pt 01 - Errors",
+        "videoId": "30D9z8M3eCQ",
+        "duracao": "9:46"
+      },
+      {
+        "id": "vid-96",
+        "titulo": "96 - Exceções pt 02 - RuntimeException",
+        "videoId": "S7gLPZO0Jug",
+        "duracao": "8:57"
+      },
+      {
+        "id": "vid-97",
+        "titulo": "97 - Exceções pt 03 - Exception",
+        "videoId": "iNlGgh0s_F8",
+        "duracao": "18:00"
+      },
+      {
+        "id": "vid-98",
+        "titulo": "98 - Exceções pt 04 - Lançando exceção unchecked",
+        "videoId": "M7CU5TOOmTc",
+        "duracao": "13:32"
+      },
+      {
+        "id": "vid-99",
+        "titulo": "99 - Exceções pt 05 - Lançando exceção checked",
+        "videoId": "Gc5SIWgcsYI",
+        "duracao": "12:45"
+      },
+      {
+        "id": "vid-100",
+        "titulo": "100 - Exceções pt 06 - Bloco Finally",
+        "videoId": "QL1Wz5yrlEw",
+        "duracao": "10:29"
+      },
+      {
+        "id": "vid-101",
+        "titulo": "101 - Exceções pt 07 - Capturando múltiplas exceções",
+        "videoId": "ibrTQmTNHQ0",
+        "duracao": "10:01"
+      },
+      {
+        "id": "vid-102",
+        "titulo": "102 - Exceções pt 08 - Multi catch em linha",
+        "videoId": "0_54_91TDuk",
+        "duracao": "7:04"
+      },
+      {
+        "id": "vid-103",
+        "titulo": "103 - Exceções pt 09 - Try with resources",
+        "videoId": "PERQlV7ax2M",
+        "duracao": "10:39"
+      },
+      {
+        "id": "vid-104",
+        "titulo": "104 - Exceções pt 10 - Exceção customizada",
+        "videoId": "3P8imoW60Uo",
+        "duracao": "6:34"
+      }
+    ]
+  },
+  {
+    "id": "mod-8",
+    "titulo": "Módulo 8: Aulas 106 a 120",
+    "aulas": [
+      {
+        "id": "vid-105",
+        "titulo": "105 - Exceções pt 11 - Exceção e regras de sobrescrita",
+        "videoId": "Jf1tZisCx7U",
+        "duracao": "6:19"
+      },
+      {
+        "id": "vid-106",
+        "titulo": "106 - Classes Utilitárias - Wrappers pt 01",
+        "videoId": "F0F0B33Un9M",
+        "duracao": "11:06"
+      },
+      {
+        "id": "vid-107",
+        "titulo": "107 - Classes Utilitárias - Wrappers pt 02",
+        "videoId": "cAqsHzWy2qI",
+        "duracao": "9:53"
+      },
+      {
+        "id": "vid-108",
+        "titulo": "108 - Classes Utilitárias - Strings pt 01",
+        "videoId": "vH7izlkNewI",
+        "duracao": "12:54"
+      },
+      {
+        "id": "vid-109",
+        "titulo": "109 - Classes Utilitárias - Strings pt 02",
+        "videoId": "5hfftQx_S8Q",
+        "duracao": "10:16"
+      },
+      {
+        "id": "vid-110",
+        "titulo": "110 - Classes Utilitárias - Strings pt 03 - Desempenho",
+        "videoId": "yx8OJVgVSU8",
+        "duracao": "12:51"
+      },
+      {
+        "id": "vid-111",
+        "titulo": "111 - Classes Utilitárias - Strings pt 04 - StringBuilder",
+        "videoId": "JAKcK93hHHU",
+        "duracao": "9:31"
+      },
+      {
+        "id": "vid-112",
+        "titulo": "112 - Classes Utilitárias - Date",
+        "videoId": "IUDT-cW4tcU",
+        "duracao": "7:09"
+      },
+      {
+        "id": "vid-113",
+        "titulo": "113 - Classes Utilitárias - Calendar",
+        "videoId": "H92wS2QKLO8",
+        "duracao": "8:57"
+      },
+      {
+        "id": "vid-114",
+        "titulo": "114 - Classes Utilitárias - DateFormat",
+        "videoId": "vmhzhQo_s08",
+        "duracao": "5:17"
+      },
+      {
+        "id": "vid-115",
+        "titulo": "115 - Classes Utilitárias - Internacionalização Datas com Locale",
+        "videoId": "zejLPQW96uI",
+        "duracao": "11:54"
+      },
+      {
+        "id": "vid-116",
+        "titulo": "116 - Classes Utilitárias - Internacionalização Números com Locale",
+        "videoId": "xaaGxC-G92w",
+        "duracao": "8:41"
+      },
+      {
+        "id": "vid-117",
+        "titulo": "117 - Classes Utilitárias - Internacionalização de moeda com Locale",
+        "videoId": "waedzSaWMjo",
+        "duracao": "9:00"
+      },
+      {
+        "id": "vid-118",
+        "titulo": "118 - Classes Utilitárias - SimpleDateFormat",
+        "videoId": "swKXov2xHFM",
+        "duracao": "6:51"
+      },
+      {
+        "id": "vid-119",
+        "titulo": "119 - Classes Utilitárias - LocalDate",
+        "videoId": "S7Uc4TxTbb8",
+        "duracao": "11:52"
+      }
+    ]
+  },
+  {
+    "id": "mod-9",
+    "titulo": "Módulo 9: Aulas 121 a 135",
+    "aulas": [
+      {
+        "id": "vid-120",
+        "titulo": "120 - Classes Utilitárias - LocalTime",
+        "videoId": "huyHYTds_xU",
+        "duracao": "5:00"
+      },
+      {
+        "id": "vid-121",
+        "titulo": "121 - Classes Utilitárias - LocalDateTime",
+        "videoId": "UXpoRzHOMP4",
+        "duracao": "6:47"
+      },
+      {
+        "id": "vid-122",
+        "titulo": "122 - Classes Utilitárias - Instant",
+        "videoId": "mcv5zRtDGag",
+        "duracao": "8:15"
+      },
+      {
+        "id": "vid-123",
+        "titulo": "123 - Classes Utilitárias - Duration",
+        "videoId": "4vg2lEGYJi4",
+        "duracao": "8:15"
+      },
+      {
+        "id": "vid-124",
+        "titulo": "124 - Classes Utilitárias - Period",
+        "videoId": "g9GtolzNlPo",
+        "duracao": "6:18"
+      },
+      {
+        "id": "vid-125",
+        "titulo": "125 - Classes Utilitárias - ChronoUnit",
+        "videoId": "YuwLrTwLI88",
+        "duracao": "5:54"
+      },
+      {
+        "id": "vid-126",
+        "titulo": "126 - Classes Utilitárias - TemporalAdjusters.",
+        "videoId": "81xG_vGIiwg",
+        "duracao": "7:31"
+      },
+      {
+        "id": "vid-127",
+        "titulo": "127 - Classes Utilitárias - TemporalAdjuster",
+        "videoId": "qL2V3ks3knc",
+        "duracao": "9:49"
+      },
+      {
+        "id": "vid-128",
+        "titulo": "128 - Classes Utilitárias - ZonedDateTime, ZoneId, OffsetDateTime",
+        "videoId": "75nO4WZVjq0",
+        "duracao": "13:04"
+      },
+      {
+        "id": "vid-129",
+        "titulo": "129 - Classes Utilitárias - DateTimeFormatter",
+        "videoId": "TyikH6iBUIY",
+        "duracao": "11:08"
+      },
+      {
+        "id": "vid-130",
+        "titulo": "130 - Classes Utilitárias - ResourceBundle",
+        "videoId": "M28gEhYT--o",
+        "duracao": "13:08"
+      },
+      {
+        "id": "vid-131",
+        "titulo": "131 - Classes Utilitárias - Regex pt 01 - Pattern e Matcher",
+        "videoId": "8hhYE4y0iMM",
+        "duracao": "10:55"
+      },
+      {
+        "id": "vid-132",
+        "titulo": "132 - Classes Utilitárias - Regex pt 02 - Pattern e Matcher - Meta caracteres",
+        "videoId": "LvLGE9ryafg",
+        "duracao": "7:17"
+      },
+      {
+        "id": "vid-133",
+        "titulo": "133 - Classes Utilitárias - Regex pt 03 - Pattern e Matcher - Range",
+        "videoId": "v_ZsEZLHKjk",
+        "duracao": "9:15"
+      },
+      {
+        "id": "vid-134",
+        "titulo": "134 - Classes Utilitárias - Regex pt 04 - Pattern e Matcher - Quantificadores pt 01",
+        "videoId": "9IFY_aHlDl0",
+        "duracao": "7:33"
+      }
+    ]
+  },
+  {
+    "id": "mod-10",
+    "titulo": "Módulo 10: Aulas 136 a 150",
+    "aulas": [
+      {
+        "id": "vid-135",
+        "titulo": "135 - Classes Utilitárias - Regex pt 05 - Pattern e Matcher - Quantificadores pt 02",
+        "videoId": "0PQ45dMLcFo",
+        "duracao": "13:17"
+      },
+      {
+        "id": "vid-136",
+        "titulo": "136 - Classes Utilitárias - Regex pt 06 - Pattern e Matcher - Anchor",
+        "videoId": "j6aDHj9S-vs",
+        "duracao": "4:03"
+      },
+      {
+        "id": "vid-137",
+        "titulo": "137 - Classes Utilitárias - Scanner - Tokens e Delimitadores",
+        "videoId": "Dx5bqoNAW6I",
+        "duracao": "6:58"
+      },
+      {
+        "id": "vid-138",
+        "titulo": "138 - Classes Utilitárias - IO pt 01 - File",
+        "videoId": "iBIKREgyF20",
+        "duracao": "8:52"
+      },
+      {
+        "id": "vid-139",
+        "titulo": "139 - Classes Utilitárias - IO pt 02 - FileWriter",
+        "videoId": "4wsysT3OxO4",
+        "duracao": "7:17"
+      },
+      {
+        "id": "vid-140",
+        "titulo": "140 - Classes Utilitárias - IO pt 03 - FileReader",
+        "videoId": "9Y8FKrklbMQ",
+        "duracao": "6:57"
+      },
+      {
+        "id": "vid-141",
+        "titulo": "141 - Classes Utilitárias - IO pt 04 - BufferedWriter",
+        "videoId": "j7cWU9PM7wc",
+        "duracao": "7:16"
+      },
+      {
+        "id": "vid-142",
+        "titulo": "142 - Classes Utilitárias - IO pt 05 - BufferedReader",
+        "videoId": "Z-EG0cRvVBQ",
+        "duracao": "5:16"
+      },
+      {
+        "id": "vid-143",
+        "titulo": "143 - Classes Utilitárias - IO pt 06 - File para diretórios",
+        "videoId": "z30kOkeTM5c",
+        "duracao": "11:14"
+      },
+      {
+        "id": "vid-144",
+        "titulo": "144 - Classes Utilitárias - NIO pt 01 - Path, Paths, Files pt 01",
+        "videoId": "PHj0E70bSeg",
+        "duracao": "7:55"
+      },
+      {
+        "id": "vid-145",
+        "titulo": "145 - Classes Utilitárias - NIO pt 02 - Path, Paths, Files pt 02",
+        "videoId": "0Cw4YlsqIqU",
+        "duracao": "11:39"
+      },
+      {
+        "id": "vid-146",
+        "titulo": "146 - Classes Utilitárias - NIO pt 03 - Normalização",
+        "videoId": "k6yQvu42sq0",
+        "duracao": "13:07"
+      },
+      {
+        "id": "vid-147",
+        "titulo": "147 - Classes Utilitárias - NIO pt 04 - Resolvendo Paths",
+        "videoId": "hNGyzCwLe1g",
+        "duracao": "9:46"
+      },
+      {
+        "id": "vid-148",
+        "titulo": "148 - Classes Utilitárias - NIO pt 05 - Relativize",
+        "videoId": "mbx83oInlGI",
+        "duracao": "8:06"
+      },
+      {
+        "id": "vid-149",
+        "titulo": "149 - Classes Utilitárias - NIO pt 06 - BasicFileAttributes pt 01",
+        "videoId": "7ccX4cxlWOg",
+        "duracao": "8:10"
+      }
+    ]
+  },
+  {
+    "id": "mod-11",
+    "titulo": "Módulo 11: Aulas 151 a 165",
+    "aulas": [
+      {
+        "id": "vid-150",
+        "titulo": "150 - Classes Utilitárias - NIO pt 07 - BasicFileAttributes pt 02",
+        "videoId": "3dnfUSbp6-4",
+        "duracao": "11:57"
+      },
+      {
+        "id": "vid-151",
+        "titulo": "151 - Classes Utilitárias - NIO pt 08 - DosFileAttribute",
+        "videoId": "4g7JeY-hTP0",
+        "duracao": "7:36"
+      },
+      {
+        "id": "vid-152",
+        "titulo": "152 - Classes Utilitárias - NIO pt 09 - PosixFileAttributes",
+        "videoId": "t8eoFrsMbNc",
+        "duracao": "8:44"
+      },
+      {
+        "id": "vid-153",
+        "titulo": "153 - Classes Utilitárias - NIO pt 10 - DirectoryStream",
+        "videoId": "UHDnO2r4Whc",
+        "duracao": "7:21"
+      },
+      {
+        "id": "vid-154",
+        "titulo": "154 - Classes Utilitárias - NIO pt 11 - SimpleFileVisitor pt 01",
+        "videoId": "1-fBnhNcbmY",
+        "duracao": "7:38"
+      },
+      {
+        "id": "vid-155",
+        "titulo": "155 - Classes Utilitárias - NIO pt 12 - SimpleFileVisitor pt 02",
+        "videoId": "UiDMz5J-mlg",
+        "duracao": "8:26"
+      },
+      {
+        "id": "vid-156",
+        "titulo": "156 - Classes Utilitárias - NIO pt 13 - PathMatcher pt 01",
+        "videoId": "m5jwgf8FEl0",
+        "duracao": "7:37"
+      },
+      {
+        "id": "vid-157",
+        "titulo": "157 - Classes Utilitárias - NIO pt 14 - PathMatcher pt 02",
+        "videoId": "duwXpnrt4D8",
+        "duracao": "5:54"
+      },
+      {
+        "id": "vid-158",
+        "titulo": "158 - Classes Utilitárias - NIO pt 15 - ZipOutputStream",
+        "videoId": "DuYqgRU--CI",
+        "duracao": "11:06"
+      },
+      {
+        "id": "vid-159",
+        "titulo": "159 - Classes Utilitárias - Serialization pt 01",
+        "videoId": "9Bkbcn7Dgvc",
+        "duracao": "13:36"
+      },
+      {
+        "id": "vid-160",
+        "titulo": "160 - Classes Utilitárias - Serialization pt 02",
+        "videoId": "8NA5-GjqKEc",
+        "duracao": "15:10"
+      },
+      {
+        "id": "vid-161",
+        "titulo": "161 - Coleções pt 01 - equals pt 01",
+        "videoId": "YWtGWgTlPwQ",
+        "duracao": "9:43"
+      },
+      {
+        "id": "vid-162",
+        "titulo": "162 - Coleções pt 02 - equals pt 02",
+        "videoId": "2t9GDdsVmjg",
+        "duracao": "10:18"
+      },
+      {
+        "id": "vid-163",
+        "titulo": "163 - Coleções pt 03 - hashCode pt 01",
+        "videoId": "Q4fgk7i0GG4",
+        "duracao": "6:28"
+      },
+      {
+        "id": "vid-164",
+        "titulo": "164 - Coleções pt 04 - hashCode pt 02",
+        "videoId": "_FnTxETp3BI",
+        "duracao": "7:42"
+      }
+    ]
+  },
+  {
+    "id": "mod-12",
+    "titulo": "Módulo 12: Aulas 166 a 180",
+    "aulas": [
+      {
+        "id": "vid-165",
+        "titulo": "165 - Coleções pt 05 - Complexidade Big-O",
+        "videoId": "NxuGmdGBDdk",
+        "duracao": "8:26"
+      },
+      {
+        "id": "vid-166",
+        "titulo": "166 - Coleções pt 06 - List pt 01",
+        "videoId": "PFuvDDS9_J8",
+        "duracao": "10:57"
+      },
+      {
+        "id": "vid-167",
+        "titulo": "167 - Coleções pt 07 - List pt 02",
+        "videoId": "_auUwu21Qqw",
+        "duracao": "9:26"
+      },
+      {
+        "id": "vid-168",
+        "titulo": "168 - Coleções pt 08 - List pt 03",
+        "videoId": "fzv-UxjYcmU",
+        "duracao": "11:09"
+      },
+      {
+        "id": "vid-169",
+        "titulo": "169 - Coleções pt 09 - Sorting lists pt 01",
+        "videoId": "WHFr-FzwJGQ",
+        "duracao": "12:38"
+      },
+      {
+        "id": "vid-170",
+        "titulo": "170 - Coleções pt 10 - Sorting lists pt 02 - Comparable",
+        "videoId": "OJGQ0lvaKGE",
+        "duracao": "13:58"
+      },
+      {
+        "id": "vid-171",
+        "titulo": "171 - Coleções pt 11 - Sorting lists pt 03 - Comparator",
+        "videoId": "ZyI_8ljieUA",
+        "duracao": "7:28"
+      },
+      {
+        "id": "vid-172",
+        "titulo": "172 - Coleções pt 12 - Binary Search",
+        "videoId": "Ixd1Fib9F9g",
+        "duracao": "11:57"
+      },
+      {
+        "id": "vid-173",
+        "titulo": "173 - Coleções pt 13 - Conversão de Lista para Arrays e vice versa",
+        "videoId": "meW6F-95yIw",
+        "duracao": "9:32"
+      },
+      {
+        "id": "vid-174",
+        "titulo": "174 - Coleções pt 14 - Iterator",
+        "videoId": "FlwOWSpYUkA",
+        "duracao": "8:39"
+      },
+      {
+        "id": "vid-175",
+        "titulo": "175 - Coleções pt 15 - Set, HashSet",
+        "videoId": "dJ3fhRq-5tM",
+        "duracao": "6:34"
+      },
+      {
+        "id": "vid-176",
+        "titulo": "176 - Coleções pt 16 - NavigableSet, TreeSet pt 01",
+        "videoId": "JibYosgdk00",
+        "duracao": "9:41"
+      },
+      {
+        "id": "vid-177",
+        "titulo": "177 - Coleções pt 17 - NavigableSet, TreeSet pt 02",
+        "videoId": "8A6W5g9Q3nA",
+        "duracao": "9:50"
+      },
+      {
+        "id": "vid-178",
+        "titulo": "178 - Coleções pt 18 - Map, HashMap, LinkedHashMap pt 01",
+        "videoId": "kkHyYrfB35s",
+        "duracao": "10:24"
+      },
+      {
+        "id": "vid-179",
+        "titulo": "179 - Coleções pt 19 - Map, HashMap, LinkedHashMap pt 02",
+        "videoId": "4jLo3TpiS4k",
+        "duracao": "8:27"
+      }
+    ]
+  },
+  {
+    "id": "mod-13",
+    "titulo": "Módulo 13: Aulas 181 a 195",
+    "aulas": [
+      {
+        "id": "vid-180",
+        "titulo": "180 - Coleções pt 20 - Map, HashMap, LinkedHashMap pt 03",
+        "videoId": "IvjlvMrwZiI",
+        "duracao": "7:05"
+      },
+      {
+        "id": "vid-181",
+        "titulo": "181 - Coleções pt 21 - NavigableMap, TreeMap",
+        "videoId": "2EKe7UJLuCQ",
+        "duracao": "8:07"
+      },
+      {
+        "id": "vid-182",
+        "titulo": "182 - Coleções pt 22 - Queue, PriorityQueue",
+        "videoId": "Q6CiTfKsAQc",
+        "duracao": "12:37"
+      },
+      {
+        "id": "vid-183",
+        "titulo": "183 - Generics pt 01 - Introdução",
+        "videoId": "YOHMTPIxRDk",
+        "duracao": "8:34"
+      },
+      {
+        "id": "vid-184",
+        "titulo": "184 - Generics pt 02 - Wildcard pt 01",
+        "videoId": "NfguvWHYbQM",
+        "duracao": "11:12"
+      },
+      {
+        "id": "vid-185",
+        "titulo": "185 - Generics pt 03 - Wildcard pt 02",
+        "videoId": "rchsi7CvUBM",
+        "duracao": "7:15"
+      },
+      {
+        "id": "vid-186",
+        "titulo": "186 - Generics pt 04 - Classes Genéricas pt 01",
+        "videoId": "ZWhEZ-7PXg8",
+        "duracao": "12:46"
+      },
+      {
+        "id": "vid-187",
+        "titulo": "187 - Generics pt 05 - Classes Genéricas pt 02",
+        "videoId": "BjipceG4EH0",
+        "duracao": "9:31"
+      },
+      {
+        "id": "vid-188",
+        "titulo": "188 - Generics pt 06 - Métodos Genéricos",
+        "videoId": "_feJhRzYxYk",
+        "duracao": "8:11"
+      },
+      {
+        "id": "vid-189",
+        "titulo": "189 - Classes Internas pt 01 - Introdução",
+        "videoId": "pAZ_4lxDYNU",
+        "duracao": "9:36"
+      },
+      {
+        "id": "vid-190",
+        "titulo": "190 - Classes Internas pt 02 - Classes Locais",
+        "videoId": "koKwh7YVtx0",
+        "duracao": "9:12"
+      },
+      {
+        "id": "vid-191",
+        "titulo": "191 - Classes Internas pt 03 - Classes Anônimas",
+        "videoId": "44uSWELqd3U",
+        "duracao": "12:41"
+      },
+      {
+        "id": "vid-192",
+        "titulo": "192 - Classes Internas pt 04 - Classes aninhadas estáticas",
+        "videoId": "jm09LQDoZ5Y",
+        "duracao": "6:17"
+      },
+      {
+        "id": "vid-193",
+        "titulo": "193 - Parametrizando comportamentos pt 01",
+        "videoId": "ZmsJPFhmmf0",
+        "duracao": "12:15"
+      },
+      {
+        "id": "vid-194",
+        "titulo": "194 - Parametrizando comportamentos pt 02",
+        "videoId": "pSSgo8RAf-A",
+        "duracao": "12:37"
+      }
+    ]
+  },
+  {
+    "id": "mod-14",
+    "titulo": "Módulo 14: Aulas 196 a 210",
+    "aulas": [
+      {
+        "id": "vid-195",
+        "titulo": "195 - Lambdas pt 01 - Predicate",
+        "videoId": "sF6z6PTqTVo",
+        "duracao": "9:04"
+      },
+      {
+        "id": "vid-196",
+        "titulo": "196 - Lambdas pt 02 - Consumer",
+        "videoId": "T5mFXrYBsao",
+        "duracao": "5:19"
+      },
+      {
+        "id": "vid-197",
+        "titulo": "197 - Lambdas pt 03 - Function",
+        "videoId": "2P6LbYqmz7c",
+        "duracao": "6:13"
+      },
+      {
+        "id": "vid-198",
+        "titulo": "198 - Method Reference pt 01 - Referência a métodos estáticos",
+        "videoId": "f7jGNzFMQb4",
+        "duracao": "12:34"
+      },
+      {
+        "id": "vid-199",
+        "titulo": "199 - Method Reference pt 02 - Referência a métodos não estáticos",
+        "videoId": "E2Ev36YbjDo",
+        "duracao": "10:33"
+      },
+      {
+        "id": "vid-200",
+        "titulo": "200 - Method Reference pt 03 - Referência a construtor",
+        "videoId": "2dUHGheKl9s",
+        "duracao": "7:48"
+      },
+      {
+        "id": "vid-201",
+        "titulo": "201 - Optional pt 01",
+        "videoId": "-xxb8LoOiRs",
+        "duracao": "11:46"
+      },
+      {
+        "id": "vid-202",
+        "titulo": "202 - Optional pt 02",
+        "videoId": "sOeNRIwhyzg",
+        "duracao": "15:36"
+      },
+      {
+        "id": "vid-203",
+        "titulo": "203 - Streams pt 01 - Introduction pt 01",
+        "videoId": "ID9zo1hSbXw",
+        "duracao": "11:16"
+      },
+      {
+        "id": "vid-204",
+        "titulo": "204 - Streams pt 02 - Introduction pt 02",
+        "videoId": "pPjQbbl4iiY",
+        "duracao": "7:51"
+      },
+      {
+        "id": "vid-205",
+        "titulo": "205 - Streams pt 03 - Introduction pt 03",
+        "videoId": "ctozCHV5EZY",
+        "duracao": "7:37"
+      },
+      {
+        "id": "vid-206",
+        "titulo": "206 - Streams pt 04 - FlatMap pt 01",
+        "videoId": "3IyvpB7Ocxw",
+        "duracao": "7:23"
+      },
+      {
+        "id": "vid-207",
+        "titulo": "207 - Streams pt 05 - FlatMap pt 02",
+        "videoId": "wCEEhV4Hkio",
+        "duracao": "6:46"
+      },
+      {
+        "id": "vid-208",
+        "titulo": "208 - Streams pt 06 - Finding and Matching",
+        "videoId": "8KiVd58GBJU",
+        "duracao": "9:34"
+      },
+      {
+        "id": "vid-209",
+        "titulo": "209 - Streams pt 07 - Reduce pt 01",
+        "videoId": "wTsGajhPCBY",
+        "duracao": "7:47"
+      }
+    ]
+  },
+  {
+    "id": "mod-15",
+    "titulo": "Módulo 15: Aulas 211 a 225",
+    "aulas": [
+      {
+        "id": "vid-210",
+        "titulo": "210 - Streams pt 08 - Reduce pt 02",
+        "videoId": "-eudNNKAGgM",
+        "duracao": "6:33"
+      },
+      {
+        "id": "vid-211",
+        "titulo": "211 - Streams pt 09 - Gerando streams pt 01",
+        "videoId": "3Ud0CDMdwiY",
+        "duracao": "10:24"
+      },
+      {
+        "id": "vid-212",
+        "titulo": "212 - Streams pt 10 - Gerando streams pt 02",
+        "videoId": "AQO2JlZcwaA",
+        "duracao": "9:50"
+      },
+      {
+        "id": "vid-213",
+        "titulo": "213  - Streams pt 11 - Collectors pt 01   Summarizing",
+        "videoId": "5wDiTtBayU4",
+        "duracao": "10:26"
+      },
+      {
+        "id": "vid-214",
+        "titulo": "214 - Streams pt 12 - Collectors pt 02 - Grouping by pt 01",
+        "videoId": "EH74dqRDCM0",
+        "duracao": "7:18"
+      },
+      {
+        "id": "vid-215",
+        "titulo": "215 - Streams pt 13 - Collectors pt 03 - Grouping by pt 02",
+        "videoId": "rO6o654D5hQ",
+        "duracao": "9:42"
+      },
+      {
+        "id": "vid-216",
+        "titulo": "216 - Streams pt 14 - Collectors pt 04 - Grouping by pt 03",
+        "videoId": "1FvYGWxmltw",
+        "duracao": "8:21"
+      },
+      {
+        "id": "vid-217",
+        "titulo": "217 - Streams pt 15 - Collectors pt 05 - Grouping by pt 04",
+        "videoId": "_lhipah8Anw",
+        "duracao": "9:47"
+      },
+      {
+        "id": "vid-218",
+        "titulo": "218 - Streams pt 16 - Parallel Streams pt 01",
+        "videoId": "n_8HNFLrMsc",
+        "duracao": "13:20"
+      },
+      {
+        "id": "vid-219",
+        "titulo": "219 - Streams pt 17 - Parallel Streams pt 02",
+        "videoId": "ZnkpA5rUq6I",
+        "duracao": "9:50"
+      },
+      {
+        "id": "vid-220",
+        "titulo": "220 - Threads pt 01 - Introduction",
+        "videoId": "dFPwCqr43Ag",
+        "duracao": "12:44"
+      },
+      {
+        "id": "vid-221",
+        "titulo": "221 - Threads pt 02 - Estados das threads",
+        "videoId": "xyU1c0iJGr8",
+        "duracao": "5:37"
+      },
+      {
+        "id": "vid-222",
+        "titulo": "222 - Threads pt 03 - Prioridade e Sleep",
+        "videoId": "1TSH83Clt18",
+        "duracao": "6:53"
+      },
+      {
+        "id": "vid-223",
+        "titulo": "223 - Threads pt 04 - Yield e Join",
+        "videoId": "BLM9Q9zdARU",
+        "duracao": "11:18"
+      },
+      {
+        "id": "vid-224",
+        "titulo": "224 - Threads pt 05 - Sincronismo de thread pt 01",
+        "videoId": "WKx6tEM8LEU",
+        "duracao": "14:32"
+      }
+    ]
+  },
+  {
+    "id": "mod-16",
+    "titulo": "Módulo 16: Aulas 226 a 240",
+    "aulas": [
+      {
+        "id": "vid-225",
+        "titulo": "225 - Threads pt 06 - Sincronismo de thread pt 02",
+        "videoId": "LVIZJWoHnjs",
+        "duracao": "8:51"
+      },
+      {
+        "id": "vid-226",
+        "titulo": "226 - Threads pt 07 - Sincronismo de thread pt 03 - Classes thread safe",
+        "videoId": "WN2bb0RsMyM",
+        "duracao": "7:44"
+      },
+      {
+        "id": "vid-227",
+        "titulo": "227 - Threads pt 08 - Sincronismo de thread pt 04 - Deadlock",
+        "videoId": "Pm0EfS0Lu4M",
+        "duracao": "7:17"
+      },
+      {
+        "id": "vid-228",
+        "titulo": "228 - Threads pt 09 - Sincronismo de thread pt 05 - Wait, notify e notifyAll",
+        "videoId": "A4zRkIydFjE",
+        "duracao": "21:23"
+      },
+      {
+        "id": "vid-229",
+        "titulo": "229 - Concorrência pt 01 - AtomicInteger",
+        "videoId": "eafDSpZMBbE",
+        "duracao": "8:23"
+      },
+      {
+        "id": "vid-230",
+        "titulo": "230 - Concorrência pt 02 - Lock and ReentrantLock",
+        "videoId": "4yw1WJUIrwg",
+        "duracao": "13:52"
+      },
+      {
+        "id": "vid-231",
+        "titulo": "231 - Concorrência pt 03 - Conditions",
+        "videoId": "8Gxw4WzYx-w",
+        "duracao": "13:21"
+      },
+      {
+        "id": "vid-232",
+        "titulo": "232 - Concorrência pt 04 - ReentrantReadWriteLock",
+        "videoId": "hsnTg0Y5Iuw",
+        "duracao": "11:00"
+      },
+      {
+        "id": "vid-233",
+        "titulo": "233 - Concorrência pt 05 - CopyOnWriteArrayList",
+        "videoId": "6rCcB4EVkm4",
+        "duracao": "8:30"
+      },
+      {
+        "id": "vid-234",
+        "titulo": "234 - Concorrência pt 06 - ArrayBlockingQueue",
+        "videoId": "MkZjut9L6W8",
+        "duracao": "6:55"
+      },
+      {
+        "id": "vid-235",
+        "titulo": "235 - Concorrência pt 07 - LinkedTransferQueue",
+        "videoId": "gZwUdhZBARo",
+        "duracao": "9:15"
+      },
+      {
+        "id": "vid-236",
+        "titulo": "236 - Concorrência pt 08 - Executors pt 01 - Thread Pools",
+        "videoId": "y7PUfmtWIXs",
+        "duracao": "11:57"
+      },
+      {
+        "id": "vid-237",
+        "titulo": "237 - Concorrência pt 09 - Executors pt 02 - ScheduledExecutorService",
+        "videoId": "oxwUqSAbMLY",
+        "duracao": "14:22"
+      },
+      {
+        "id": "vid-238",
+        "titulo": "238 - Concorrência pt 10 - Executors pt 03 - Interface Callable",
+        "videoId": "ct9KQy16pVE",
+        "duracao": "8:15"
+      },
+      {
+        "id": "vid-239",
+        "titulo": "239 - Concorrência pt 11 - Executors pt 04 - Future",
+        "videoId": "NzXEuBgTHKE",
+        "duracao": "11:07"
+      }
+    ]
+  },
+  {
+    "id": "mod-17",
+    "titulo": "Módulo 17: Aulas 241 a 255",
+    "aulas": [
+      {
+        "id": "vid-240",
+        "titulo": "240 - Concorrência pt 12 - CompletableFuture pt 01 - get and join",
+        "videoId": "ZKDgjM_x4bo",
+        "duracao": "17:25"
+      },
+      {
+        "id": "vid-241",
+        "titulo": "241 - Concorrência pt 13 - CompletableFuture pt 02 - Streams",
+        "videoId": "iPQNgSnj41o",
+        "duracao": "6:45"
+      },
+      {
+        "id": "vid-242",
+        "titulo": "242 - Concorrência pt 14 - CompletableFuture pt 03 - ThreadFactory",
+        "videoId": "o7x9PmwKxv0",
+        "duracao": "7:13"
+      },
+      {
+        "id": "vid-243",
+        "titulo": "243 - Concorrência pt 15 - CompletableFuture pt 04 - Encadeando chamadas pt 01",
+        "videoId": "Id9RyqFuRiM",
+        "duracao": "18:36"
+      },
+      {
+        "id": "vid-244",
+        "titulo": "244 - Concorrência pt 16 - CompletableFuture pt 05 - Encadeando chamadas pt 02",
+        "videoId": "W2j3KzVgiAs",
+        "duracao": "13:05"
+      },
+      {
+        "id": "vid-245",
+        "titulo": "245 - Concorrência pt 17 - CompletableFuture pt 06 - allOf, anyOf",
+        "videoId": "BdOD7-unrRM",
+        "duracao": "9:12"
+      },
+      {
+        "id": "vid-246",
+        "titulo": "246 - Padrões de Projeto pt 01 - Builder",
+        "videoId": "UL-FdBvthHU",
+        "duracao": "13:46"
+      },
+      {
+        "id": "vid-247",
+        "titulo": "247 - Padrões de Projeto pt 02 - Factory",
+        "videoId": "k3BbX3Ysd5o",
+        "duracao": "6:45"
+      },
+      {
+        "id": "vid-248",
+        "titulo": "248 - Padrões de Projeto pt 03 - Singleton pt 01 - Eager Initialization",
+        "videoId": "p4e2YMW3H6k",
+        "duracao": "10:44"
+      },
+      {
+        "id": "vid-249",
+        "titulo": "249 - Padrões de Projeto pt 04 - Singleton pt 02 - Lazy Initialization",
+        "videoId": "9OvzSW1hAY0",
+        "duracao": "6:51"
+      },
+      {
+        "id": "vid-250",
+        "titulo": "250 - Padrões de Projeto pt 05 - Singleton pt 03 - Singleton with enumeration",
+        "videoId": "eutGuy74Ccg",
+        "duracao": "4:46"
+      },
+      {
+        "id": "vid-251",
+        "titulo": "251 - Padrões de Projeto pt 06 - Data Transfer Object",
+        "videoId": "DVtkSOD86Ag",
+        "duracao": "7:24"
+      },
+      {
+        "id": "vid-252",
+        "titulo": "252 - JDBC pt 01 - Instalando Docker",
+        "videoId": "Q4UgGZfTgCs",
+        "duracao": "8:59"
+      },
+      {
+        "id": "vid-253",
+        "titulo": "253 - JDBC pt 02 - Criando container MySQL",
+        "videoId": "VUbrBmiKkeQ",
+        "duracao": "13:42"
+      },
+      {
+        "id": "vid-254",
+        "titulo": "254 - JDBC pt 03 - Instalando Workbench, criando schema e tabelas",
+        "videoId": "NO8zP0Xyl8Q",
+        "duracao": "12:35"
+      }
+    ]
+  },
+  {
+    "id": "mod-18",
+    "titulo": "Módulo 18: Aulas 256 a 270",
+    "aulas": [
+      {
+        "id": "vid-255",
+        "titulo": "255 - JDBC pt 04 - Instalando e adicionando maven ao projeto",
+        "videoId": "1MPs67lkmuA",
+        "duracao": "14:16"
+      },
+      {
+        "id": "vid-256",
+        "titulo": "256 - JDBC pt 05 - Adicionando dependência e conectando com banco",
+        "videoId": "JatWzzOSGwg",
+        "duracao": "9:59"
+      },
+      {
+        "id": "vid-257",
+        "titulo": "257 - JDBC pt 06 - Inserindo dados com Statement",
+        "videoId": "-1Ctzcf3bFQ",
+        "duracao": "13:39"
+      },
+      {
+        "id": "vid-258",
+        "titulo": "258 - JDBC pt 07 - Lombok e Log4J2",
+        "videoId": "Dpe6f7JpVIk",
+        "duracao": "19:02"
+      },
+      {
+        "id": "vid-259",
+        "titulo": "259 - JDBC pt 08 - Deletando dados com Statement",
+        "videoId": "jO0dAZ2CnJY",
+        "duracao": "11:54"
+      },
+      {
+        "id": "vid-260",
+        "titulo": "260 - JDBC pt 09 - Atualizando dados com Statement",
+        "videoId": "e_qj9ee4cv0",
+        "duracao": "8:11"
+      },
+      {
+        "id": "vid-261",
+        "titulo": "261 - JDBC pt 10 - Buscando dados com ResultSet pt 01 - findAll",
+        "videoId": "SA88IvP6Wr8",
+        "duracao": "11:08"
+      },
+      {
+        "id": "vid-262",
+        "titulo": "262 - JDBC pt 11 - Buscando dados com ResultSet pt 02 - findByName",
+        "videoId": "kAsRdPNp1-E",
+        "duracao": "7:01"
+      },
+      {
+        "id": "vid-263",
+        "titulo": "263 - JDBC pt 12 - ResultSetMetaData",
+        "videoId": "l0bMybn4trY",
+        "duracao": "9:12"
+      },
+      {
+        "id": "vid-264",
+        "titulo": "264 - JDBC pt 13 - DatabaseMetaData",
+        "videoId": "uaaseJJIhes",
+        "duracao": "8:28"
+      },
+      {
+        "id": "vid-265",
+        "titulo": "265 - JDBC pt 14 - ResultSet TYPE SCROLL INSENSITIVE",
+        "videoId": "0M4RboYfjP4",
+        "duracao": "12:09"
+      },
+      {
+        "id": "vid-266",
+        "titulo": "266 - JDBC pt 15 - Atualizando registros com ResultSet",
+        "videoId": "TIunWd7vVX8",
+        "duracao": "6:56"
+      },
+      {
+        "id": "vid-267",
+        "titulo": "267 - JDBC pt 16 - Inserindo e deletando registros com ResultSet",
+        "videoId": "xeAYUaI3fbU",
+        "duracao": "11:34"
+      },
+      {
+        "id": "vid-268",
+        "titulo": "268 - JDBC pt 17 - PreparedStatement pt 01",
+        "videoId": "uQ2cESUncjM",
+        "duracao": "14:57"
+      },
+      {
+        "id": "vid-269",
+        "titulo": "269 - JDBC pt 18 - PreparedStatement pt 02",
+        "videoId": "8gbs3yGJtE8",
+        "duracao": "5:43"
+      }
+    ]
+  },
+  {
+    "id": "mod-19",
+    "titulo": "Módulo 19: Aulas 271 a 285",
+    "aulas": [
+      {
+        "id": "vid-270",
+        "titulo": "270 - JDBC pt 19 - CallableStatement",
+        "videoId": "PRXFwv9p4qI",
+        "duracao": "9:20"
+      },
+      {
+        "id": "vid-271",
+        "titulo": "271 - JDBC pt 20 - Connected RowSet - JdbcRowSet pt 01",
+        "videoId": "wWLEz5wlpiE",
+        "duracao": "9:55"
+      },
+      {
+        "id": "vid-272",
+        "titulo": "272 - JDBC pt 21 - Connected RowSet - JdbcRowSet pt 02",
+        "videoId": "tvQcULQvYag",
+        "duracao": "11:29"
+      },
+      {
+        "id": "vid-273",
+        "titulo": "273 - JDBC pt 22 - Disconnected RowSet - CachedRowSet",
+        "videoId": "Fau61I3F5CY",
+        "duracao": "11:29"
+      },
+      {
+        "id": "vid-274",
+        "titulo": "274 - JDBC pt 23 - Transação",
+        "videoId": "ivueCjdK6C0",
+        "duracao": "13:55"
+      },
+      {
+        "id": "vid-275",
+        "titulo": "275 - JDBC pt 24 - CRUD pt 01 - findByName and findAll",
+        "videoId": "pBgOitdJbgY",
+        "duracao": "18:32"
+      },
+      {
+        "id": "vid-276",
+        "titulo": "276 - JDBC pt 25 - CRUD pt 02 - delete",
+        "videoId": "b-eWIeQ9PnQ",
+        "duracao": "11:02"
+      },
+      {
+        "id": "vid-277",
+        "titulo": "277 - JDBC pt 26 - CRUD pt 03 - save",
+        "videoId": "AlefsI8CiqY",
+        "duracao": "10:49"
+      },
+      {
+        "id": "vid-278",
+        "titulo": "278 - JDBC pt 27 - CRUD pt 04 - update",
+        "videoId": "0_-P83Uv_pA",
+        "duracao": "13:36"
+      },
+      {
+        "id": "vid-279",
+        "titulo": "279 - JDBC pt 28 - CRUD pt 05 - Anime Crud",
+        "videoId": "sehuZWtXo-M",
+        "duracao": "25:25"
+      },
+      {
+        "id": "vid-280",
+        "titulo": "280 - Testes unitários com jUnit pt 01",
+        "videoId": "jdBsFPF_w9Q",
+        "duracao": "15:13"
+      },
+      {
+        "id": "vid-281",
+        "titulo": "281 - Testes unitários com jUnit pt 02",
+        "videoId": "N5iaGF90XGg",
+        "duracao": "18:19"
+      },
+      {
+        "id": "vid-282",
+        "titulo": "282 - Atualizando JDK",
+        "videoId": "K0NNErTM1QU",
+        "duracao": "6:09"
+      },
+      {
+        "id": "vid-283",
+        "titulo": "283 - Record Class",
+        "videoId": "mAioJY5_hFk",
+        "duracao": "13:11"
+      },
+      {
+        "id": "vid-284",
+        "titulo": "284 - Pattern Matching for instanceof",
+        "videoId": "KYN9UfPpJ38",
+        "duracao": "7:09"
+      }
+    ]
+  },
+  {
+    "id": "mod-20",
+    "titulo": "Módulo 20: Aulas 286 a 300",
+    "aulas": [
+      {
+        "id": "vid-285",
+        "titulo": "285 - É só correr pro abraço",
+        "videoId": "ti-Yb11y_m8",
+        "duracao": "3:04"
+      }
+    ]
+  }
+]
