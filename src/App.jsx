@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 
-// 1. Importe suas duas "páginas"
+// 1. CORREÇÃO: Importando de './pages/'
 import LandingPage from './pages/LandingPage'; 
 import ProfilesPage from './pages/ProfilesPage';
-// Certifique-se de que os componentes Navbar, ProfileCard, etc., 
-// estejam na pasta 'components' e sejam importados pela ProfilesPage.
+import MyProfilePage from './pages/MyProfilePage';
 
 function App() {
-  // --- ESTADO DO TEMA (Já tínhamos) ---
   const [theme, setTheme] = useState(
     localStorage.getItem('theme') || 'light'
   );
+
+  const [currentPage, setCurrentPage] = useState('landing'); 
 
   useEffect(() => {
     const root = window.document.documentElement; 
@@ -23,38 +23,29 @@ function App() {
     setTheme(currentTheme => (currentTheme === 'light' ? 'dark' : 'light'));
   };
 
-  // --- ESTADO DE NAVEGAÇÃO ---
-  // Controla qual página está visível. Começa na 'landing'
-  const [currentPage, setCurrentPage] = useState('landing'); 
-
-  // --- FUNÇÕES DE NAVEGAÇÃO ---
-  // Esta função será passada para a LandingPage
-  const goToProfiles = () => {
-    setCurrentPage('profiles');
-    window.scrollTo(0, 0); // Garante que a nova página comece no topo
-  };
-
-  // Esta função será passada para a ProfilesPage (para o Navbar)
-  const goToLanding = () => {
-    setCurrentPage('landing');
+  const handleNavigate = (page) => {
+    setCurrentPage(page);
     window.scrollTo(0, 0);
   };
 
-  // --- RENDERIZAÇÃO CONDICIONAL ---
-  // O App decide qual página mostrar
   if (currentPage === 'landing') {
     return (
       <LandingPage 
         theme={theme} 
         toggleTheme={toggleTheme} 
-        goToProfiles={goToProfiles} // Passa a função para a Landing Page
+        goToProfiles={() => handleNavigate('profiles')} 
+      />
+    );
+  } else if (currentPage === 'my-profile') {
+    return (
+      <MyProfilePage 
+        onNavigate={handleNavigate} 
       />
     );
   } else {
-    // (currentPage === 'profiles')
     return (
       <ProfilesPage 
-        goToLanding={goToLanding} // Passa a função para a Página de Perfis
+        onNavigate={handleNavigate} 
       />
     );
   }
