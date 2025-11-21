@@ -79,3 +79,6 @@ https://github.com/JoaoLucasFSantos/reQualifica-Gs2
 
 ## Link do Deploy
 https://joaolucasfsantos.github.io/reQualifica-Gs2/
+
+## Link do Linkedin
+https://www.linkedin.com/posts/samuel-de-oliveira-da-silva-9a8331355_ol%C3%A1-rede-venho-apresentar-meu-projeto-desenvolvido-activity-7397751674465005569-TmY1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFiA81ABzLZ5MqhoX5-ZS7HrKtLP0h-TG28
