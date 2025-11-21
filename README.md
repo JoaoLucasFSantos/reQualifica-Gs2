@@ -69,6 +69,9 @@ O terminal exibirá o endereço de acesso local (geralmente http://localhost:517
 ## Link do Repositório
 https://github.com/JoaoLucasFSantos/reQualifica-Gs2
 
+## Link do Deploy
+https://joaolucasfsantos.github.io/reQualifica-Gs2/
+
 ## Integrantes do Grupo
 
 Nome Completo | RM
