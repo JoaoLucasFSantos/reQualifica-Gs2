@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
-import { PlayCircle, ChevronDown, ChevronUp, BookOpen, ArrowLeft, Video, AlertCircle } from 'lucide-react';
+import { PlayCircle, ChevronDown, ChevronUp, BookOpen, ArrowLeft, Video, AlertCircle, Clock, CheckCircle } from 'lucide-react';
 
 const CoursesPage = ({ onNavigate, course, onBack }) => {
   
@@ -24,6 +24,38 @@ const CoursesPage = ({ onNavigate, course, onBack }) => {
     if (mods.length > 0) return mods[0].id;
     return null;
   });
+
+  // --- TESTE
+  const [testeIniciado, setTesteIniciado] = useState(false);
+  const [tempoInicio, setTempoInicio] = useState(null);
+  const [tempoDecorrido, setTempoDecorrido] = useState(0);
+
+  React.useEffect(() => {
+    if (!testeIniciado) return;
+
+    const intervalo = setInterval(() => {
+      const agora = Date.now();
+      const decorrido = Math.floor((agora - tempoInicio) / 1000);
+      setTempoDecorrido(decorrido);
+    }, 1000);
+
+    return () => clearInterval(intervalo);
+  }, [testeIniciado, tempoInicio]);
+
+  const iniciarTeste = () => {
+    setTesteIniciado(true);
+    setTempoInicio(Date.now());
+  };
+
+  const formatarTempo = (segundos) => {
+    const minutos = Math.floor(segundos / 60);
+    const segs = segundos % 60;
+    return `${String(minutos).padStart(2, '0')}:${String(segs).padStart(2, '0')}`;
+  };
+
+  const enviarRespostas = () => {
+    alert('✓ Respostas enviadas com sucesso!\n\nSeu teste foi concluído. Você receberá em breve um feedback detalhado por email.');
+  };
 
   const toggleModule = (moduleId) => {
     setExpandedModule(expandedModule === moduleId ? null : moduleId);
@@ -153,6 +185,149 @@ const CoursesPage = ({ onNavigate, course, onBack }) => {
         </div>
 
       </div>
+
+      {/* --- SEÇÃO DE TESTE (Apenas para Python 3 - Curso Completo) --- */}
+      {(getTitle(course) === 'Python 3 - Curso Completo' || course?.titulo === 'Python 3 - Curso Completo') && (
+      <div className="w-full bg-gradient-to-b from-bg-light-main to-gray-50 dark:from-bg-dark-main dark:to-[#1a1a1a] border-t border-gray-200 dark:border-gray-800 py-12">
+        <div className="max-w-7xl mx-auto px-4">
+          {!testeIniciado ? (
+            // Seção de Boas-vindas
+            <div className="bg-white dark:bg-bg-dark-card rounded-xl shadow-lg p-8 md:p-12 text-center border-l-4 border-primary-red">
+              <h2 className="text-3xl md:text-4xl font-bold text-text-dark-main dark:text-white mb-4">
+                📝 Teste seus Conhecimentos
+              </h2>
+              <p className="text-lg text-text-light-support dark:text-text-dark-support mb-6">
+                Após completar os vídeos, realize este teste para validar seus conhecimentos sobre programação Python.
+              </p>
+              
+              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-[#0f1419] dark:to-[#1a1f2e] border-l-4 border-primary-red rounded-lg p-6 mb-8 text-left inline-block">
+                <ul className="space-y-2 text-text-light-support dark:text-text-dark-support">
+                  <li className="flex items-center"><CheckCircle size={18} className="mr-3 text-green-500" /> <span><strong>11 questões</strong> de teoria e prática</span></li>
+                  <li className="flex items-center"><Clock size={18} className="mr-3 text-primary-red" /> <span><strong>Cronômetro</strong> para acompanhar seu tempo</span></li>
+                  <li className="flex items-center"><CheckCircle size={18} className="mr-3 text-green-500" /> <span><strong>Feedback</strong> detalhado após envio</span></li>
+                </ul>
+              </div>
+
+              <button 
+                onClick={iniciarTeste}
+                className="bg-gradient-to-r from-primary-red to-orange-500 hover:from-red-600 hover:to-orange-600 text-white font-bold py-4 px-12 rounded-lg text-lg transition-all transform hover:scale-105 active:scale-95 shadow-lg"
+              >
+                ▶ Iniciar Teste
+              </button>
+            </div>
+          ) : (
+            // Seção de Teste Ativo
+            <div className="space-y-8">
+              {/* Cronômetro */}
+              <div className="bg-gradient-to-r from-primary-red to-orange-500 rounded-xl p-6 text-center text-white shadow-lg">
+                <div className="text-sm font-semibold opacity-90 mb-2">⏱ TEMPO DECORRIDO</div>
+                <div className="text-5xl font-mono font-bold tracking-wider">{formatarTempo(tempoDecorrido)}</div>
+              </div>
+
+              {/* Questões */}
+              <div className="space-y-6">
+                {/* PARTE 1: Questões Teóricas */}
+                <div>
+                  <h3 className="text-2xl font-bold text-text-dark-main dark:text-white mb-4 flex items-center">
+                    <BookOpen size={28} className="mr-3 text-primary-red" /> Parte 1 – Questões Teóricas
+                  </h3>
+
+                  {[
+                    { n: 1, titulo: 'O que é uma variável em Python?', desc: 'Explique o conceito, como funciona na memória e sua importância.' },
+                    { n: 2, titulo: 'Diferença entre lista e tupla', desc: 'Descreva as principais diferenças e quando usar cada uma.' },
+                    { n: 3, titulo: 'O que é uma função?', desc: 'Explique o conceito e suas vantagens.' },
+                    { n: 4, titulo: 'Importância da indentação em Python', desc: 'Por que a indentação é importante? O que acontece sem ela?' },
+                    { n: 5, titulo: 'O que é um loop for?', desc: 'Explique quando utilizá-lo e dê um exemplo prático.' }
+                  ].map((q) => (
+                    <div key={q.n} className="bg-white dark:bg-bg-dark-card rounded-lg shadow p-6 border-l-4 border-primary-red">
+                      <div className="flex items-start mb-3">
+                        <span className="inline-block bg-primary-red text-white font-bold w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3 flex-shrink-0">
+                          {q.n}
+                        </span>
+                        <div>
+                          <h4 className="text-lg font-semibold text-text-dark-main dark:text-white">{q.titulo}</h4>
+                          <p className="text-sm text-text-light-support dark:text-text-dark-support mt-1">{q.desc}</p>
+                        </div>
+                      </div>
+                      <textarea 
+                        className="w-full p-3 border-2 border-gray-200 dark:border-gray-700 dark:bg-[#1a1a1a] dark:text-white rounded-lg focus:border-primary-red focus:outline-none transition min-h-24"
+                        placeholder="Sua resposta aqui..."
+                      />
+                    </div>
+                  ))}
+                </div>
+
+                {/* PARTE 2: Questões Práticas */}
+                <div>
+                  <h3 className="text-2xl font-bold text-text-dark-main dark:text-white mb-4 flex items-center">
+                    <Video size={28} className="mr-3 text-primary-red" /> Parte 2 – Questões Práticas
+                  </h3>
+
+                  {[
+                    { n: 6, titulo: 'Verificar se um número é par ou ímpar', desc: 'Escreva um programa em Python.' },
+                    { n: 7, titulo: 'Filtrar números maiores que 10', desc: 'De: [3, 15, 8, 22, 7, 11]' },
+                    { n: 8, titulo: 'Função para calcular a média', desc: 'Crie: media(lista)' },
+                    { n: 9, titulo: 'Contador de vogais em um texto', desc: 'Considere maiúsculas e minúsculas.' },
+                    { n: 10, titulo: 'Filtrar produtos por preço', desc: 'Acima de 50 de: {"Mouse": 30, "Teclado": 80, "Monitor": 500, "Cabo HDMI": 25, "Headset": 120}' }
+                  ].map((q) => (
+                    <div key={q.n} className="bg-white dark:bg-bg-dark-card rounded-lg shadow p-6 border-l-4 border-primary-red">
+                      <div className="flex items-start mb-3">
+                        <span className="inline-block bg-primary-red text-white font-bold w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3 flex-shrink-0">
+                          {q.n}
+                        </span>
+                        <div>
+                          <h4 className="text-lg font-semibold text-text-dark-main dark:text-white">{q.titulo}</h4>
+                          <p className="text-sm text-text-light-support dark:text-text-dark-support mt-1">{q.desc}</p>
+                        </div>
+                      </div>
+                      <textarea 
+                        className="w-full p-3 border-2 border-gray-200 dark:border-gray-700 dark:bg-[#1a1a1a] dark:text-white rounded-lg focus:border-primary-red focus:outline-none transition min-h-24 font-mono text-sm"
+                        placeholder="Seu código aqui..."
+                      />
+                    </div>
+                  ))}
+                </div>
+
+                {/* DESAFIO FINAL */}
+                <div>
+                  <h3 className="text-2xl font-bold text-text-dark-main dark:text-white mb-4 flex items-center">
+                    🚀 Desafio Final
+                  </h3>
+
+                  <div className="bg-white dark:bg-bg-dark-card rounded-lg shadow p-6 border-l-4 border-primary-red">
+                    <div className="flex items-start mb-3">
+                      <span className="inline-block bg-primary-red text-white font-bold w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3 flex-shrink-0">
+                        11
+                      </span>
+                      <div>
+                        <h4 className="text-lg font-semibold text-text-dark-main dark:text-white">Sistema de Cadastro de Usuários</h4>
+                        <p className="text-sm text-text-light-support dark:text-text-dark-support mt-1">
+                          Crie um programa com: Menu (1: Cadastrar, 2: Listar, 3: Sair) | Lista de dicionários {"{"}"nome": "", "idade": ""{"}"} | Loop até sair
+                        </p>
+                      </div>
+                    </div>
+                    <textarea 
+                      className="w-full p-3 border-2 border-gray-200 dark:border-gray-700 dark:bg-[#1a1a1a] dark:text-white rounded-lg focus:border-primary-red focus:outline-none transition min-h-32 font-mono text-sm"
+                      placeholder="Seu código aqui..."
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Botão Enviar */}
+              <div className="text-center pt-6">
+                <button 
+                  onClick={enviarRespostas}
+                  className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold py-4 px-12 rounded-lg text-lg transition-all transform hover:scale-105 active:scale-95 shadow-lg"
+                >
+                  ✓ Enviar Respostas
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+      )}
     </div>
   );
 };
