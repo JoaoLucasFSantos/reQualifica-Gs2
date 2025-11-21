@@ -1,5 +1,13 @@
 # ReQualifica - Plataforma de Qualificação e Realocação Profissional
 
+## Integrantes do Grupo
+
+Nome Completo | RM
+--- | ---
+Rafael RM:565855
+Joao Lucas RM:562608
+Samuel RM:566244
+
 ## Resumo do Projeto
 A ReQualifica é uma solução digital desenvolvida para enfrentar os desafios da transição de carreira e recolocação profissional. A plataforma atua como um ecossistema integrado que une duas frentes essenciais: Visibilidade e Educação.
 
@@ -71,11 +79,3 @@ https://github.com/JoaoLucasFSantos/reQualifica-Gs2
 
 ## Link do Deploy
 https://joaolucasfsantos.github.io/reQualifica-Gs2/
-
-## Integrantes do Grupo
-
-Nome Completo | RM
---- | ---
-Rafael RM:565855
-Joao Lucas RM:562608
-Samuel RM:566244
